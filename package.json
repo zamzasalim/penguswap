@@ -1,0 +1,31 @@
+{
+  "name": "penguswap",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2",
+    "@uniswap/sdk": "^3.0.3",
+    "@uniswap/sdk-core": "^7.0.0",
+    "@uniswap/v3-sdk": "^3.20.0",
+    "axios": "^1.7.7",
+    "bignumber.js": "^9.1.2",
+    "bip39": "^3.1.0",
+    "colors": "^1.4.0",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.4",
+    "jsbi": "^4.3.0",
+    "moment-timezone": "^0.5.46",
+    "ora": "^8.1.1",
+    "random": "^5.1.1",
+    "readline-sync": "^1.4.10",
+    "solc": "^0.8.17",
+    "twisters": "^1.1.0",
+    "wcwidth": "^1.0.1",
+    "winston": "^3.15.0"
+  }
+}
