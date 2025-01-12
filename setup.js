@@ -5,14 +5,14 @@ export default class setup {
   ];
 
   static token = {
-    name: "Basic Token",
-    symbol: "BSC",
-    supply: 100000,
+    name: "Bithumb Token",
+    symbol: "BIT",
+    supply: 1005,
   };
 
   static gasSetting = {
     gasLimit: 15000000,
-    gasPrice: 5,
+    gasPrice: 3,
   };
 
   static rpc = {
@@ -28,6 +28,6 @@ export default class setup {
     FACTORY_ADDRESS: "0x7316C24Cb58a49673DdC3EE369d20806083BA48C",
   };
 
-  static liquidityPool0 = 100; //add 100 WCTC
-  static liquidityPool1 = 100; //add 100 Token
+  static liquidityPool0 = "1000"; //add 100 WCTC
+  static liquidityPool1 = "1000"; //add 100 Token
 }
