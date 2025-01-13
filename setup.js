@@ -1,12 +1,12 @@
 export default class setup {
   static accounts = [
-    "",
+    "fc7a79dceb58ebc812d631cb05af814bbb1a7bcdce8f31ae569354ca1b58c25d",
     //add more privateKey
   ];
 
   static token = {
-    name: "Erc20 Token",
-    symbol: "MTXN",
+    name: "Taiko Token",
+    symbol: "Taiko",
     supply: 10005,
   };
 

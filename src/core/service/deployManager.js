@@ -6,6 +6,7 @@ import { solidityCode } from "./source.js";
 import { ethers } from "ethers";
 import Twist from "../../utils/twister.js";
 import { Helper } from "../../utils/helper.js";
+import ServiceManager from "./serviceManager.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -13,14 +14,24 @@ const __dirname = path.dirname(__filename);
 export default class DeployTokenManager {
   constructor(core) {
     this.coreInstance = core;
+    this.serviceManager = new ServiceManager(this.coreInstance);
   }
 
   saveSolidityFile = (contractName, code) => {
-    const filePath = path.resolve(
-      __dirname,
-      "contracts",
-      `${contractName}.sol`
-    );
+    const contractFolder = path.join(__dirname, "contracts");
+
+    // Pastikan folder 'contracts' ada
+    if (!fs.existsSync(contractFolder)) {
+      fs.mkdirSync(contractFolder, { recursive: true });
+      Twist.log(
+        "💨 Folder contracts tidak ada, membuat folder...",
+        this.coreInstance.accounts,
+        this.coreInstance,
+        `✔️ Folder contracts berhasil dibuat`
+      );
+    }
+
+    const filePath = path.join(contractFolder, `${contractName}.sol`);
     fs.writeFileSync(filePath, code, "utf8");
     Twist.log(
       `💨 Saving Contract ${contractName}.sol`,
@@ -35,7 +46,7 @@ export default class DeployTokenManager {
 
     this.saveSolidityFile(contractName, sourceCode);
 
-    const contractPath = path.resolve(
+    const contractPath = path.join(
       __dirname,
       "contracts",
       `${contractName}.sol`
@@ -100,6 +111,14 @@ export default class DeployTokenManager {
 
   async deployContract(name, symbol, supply) {
     const contractName = name.replace(/\s+/g, "");
+    const action = `🔨 Deploying contract \x1b[1m${name} (${symbol})\x1b[0m`;
+    await Helper.delay(
+      5000,
+      this.coreInstance.accounts,
+      this.coreInstance,
+      action,
+      "Preparing to deploy"
+    );
     try {
       const { bytecode, abi } = await this.compileContract(contractName);
 
@@ -117,19 +136,20 @@ export default class DeployTokenManager {
       );
 
       const action = `🔨 Start to deploy contract \x1b[1m${name} (${symbol})\x1b[0m`;
-      Twist.log(
+      const loading = this.serviceManager.startLoadingSpinner(
+        Helper.animation,
         action,
-        this.coreInstance.accounts,
-        this.coreInstance,
-        "Deploying..."
+        "Waiting for transaction confirmation..."
       );
-      const contract = await factory.deploy(18, name, symbol, supply, {
+
+      const contract = await factory.deploy({
         gasLimit: this.coreInstance.FIXED_GAS_LIMIT,
         gasPrice: this.coreInstance.FIXED_GAS_PRICE,
       });
-
       await contract.deploymentTransaction();
       await contract.waitForDeployment();
+      clearInterval(loading);
+      process.stdout.write("\r\x1b[K");
       Twist.log(
         `💨 Deploying contract ${contractName}`,
         this.coreInstance.accounts,

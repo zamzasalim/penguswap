@@ -81,15 +81,6 @@ export default class Core {
   }
 
   async deployToken(name, symbol, supply) {
-    const action = `🔨 Deploying contract \x1b[1m${name} (${symbol})\x1b[0m`;
-    await Helper.delay(
-      5000,
-      this.accounts,
-      this,
-      action,
-      "Preparing to deploy"
-    );
-
     try {
       const contractAddress = await this.deployTokenManager.deployContract(
         name,
@@ -102,6 +93,8 @@ export default class Core {
         throw new Error("Contract address is zero address");
       }
 
+      const action = `🔨 Deploying contract \x1b[1m${name} (${symbol})\x1b[0m`;
+
       Twist.log(
         action,
         this.accounts,
@@ -111,8 +104,8 @@ export default class Core {
       await this.sleep(3000);
       return contractAddress;
     } catch (error) {
+      console.error(error);
       this.handleError(action, error.message);
-      process.exit(1);
     }
   }
 
