@@ -1,1 +1,144 @@
-const a0_0x2c7c1f=a0_0x55a1;(function(_0x3f109a,_0x9f2032){const _0x19c287=a0_0x55a1,_0x65797d=_0x3f109a();while(!![]){try{const _0x59688f=-parseInt(_0x19c287(0xd9))/0x1+-parseInt(_0x19c287(0xe7))/0x2+parseInt(_0x19c287(0xfc))/0x3+parseInt(_0x19c287(0x105))/0x4*(parseInt(_0x19c287(0xe4))/0x5)+-parseInt(_0x19c287(0xe8))/0x6*(-parseInt(_0x19c287(0xe6))/0x7)+-parseInt(_0x19c287(0xfb))/0x8*(parseInt(_0x19c287(0xf4))/0x9)+parseInt(_0x19c287(0xed))/0xa;if(_0x59688f===_0x9f2032)break;else _0x65797d['push'](_0x65797d['shift']());}catch(_0x24b2f3){_0x65797d['push'](_0x65797d['shift']());}}}(a0_0x2e15,0x3b124));import a0_0x32d894 from'./twister.js';import a0_0x1fe8e6 from'bip39';function a0_0x2e15(){const _0x2a8cca=['217mMTchw','617068PVZkfm','15306xRMfhh','round','floor','log','getContract','7999960Rbvqpu','showSkelLogo','parse','\x20not\x20found\x20in\x20contractAddress','Contract\x20','toDateString','Invalid\x20address:\x20','47826gkSKmj','randomInt','...','Transaction\x20reverted\x20without\x20reason.','serializeBigInt','getCurrentTimestamp','Unknown','496YarYte','1155207fPovNz','test','toString','constant','\x20at\x20','length','delay','Private\x20Key','random','4NrsNna','stringify','\x0a\x20\x20\x20\x20\x20\x20█████████\x20\x20\x20█████\x20███████████\x20\x20\x20██████████\x20\x20\x20███████████\x20\x20\x20\x20\x20\x20███████\x20\x20\x20\x20███████████\x20\x20\x20\x20\x20\x20\x20█████████\x20\x20\x20\x20█████████\x20\x20\x20\x20█████████\x0a\x20\x20\x20\x20\x20███░░░░░███\x20░░███\x20░░███░░░░░███\x20░░███░░░░███\x20░░███░░░░░███\x20\x20\x20███░░░░░███\x20░░███░░░░░███\x20\x20\x20\x20\x20███░░░░░███\x20\x20███░░░░░███\x20\x20███░░░░░███\x0a\x20\x20\x20\x20░███\x20\x20\x20\x20░███\x20\x20░███\x20\x20░███\x20\x20\x20\x20░███\x20\x20░███\x20\x20\x20░░███\x20░███\x20\x20\x20\x20░███\x20\x20███\x20\x20\x20\x20\x20░░███\x20░███\x20\x20\x20\x20░███\x20\x20\x20\x20░███\x20\x20\x20\x20░███\x20░███\x20\x20\x20\x20░░░\x20\x20███\x20\x20\x20\x20\x20░░░\x0a\x20\x20\x20\x20░███████████\x20\x20░███\x20\x20░██████████\x20\x20\x20░███\x20\x20\x20\x20░███\x20░██████████\x20\x20░███\x20\x20\x20\x20\x20\x20░███\x20░██████████\x20\x20\x20\x20\x20░███████████\x20░░█████████\x20░███\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20░███░░░░░███\x20\x20░███\x20\x20░███░░░░░███\x20\x20░███\x20\x20\x20\x20░███\x20░███░░░░░███\x20░███\x20\x20\x20\x20\x20\x20░███\x20░███░░░░░░\x20\x20\x20\x20\x20\x20░███░░░░░███\x20\x20░░░░░░░░███░███\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20░███\x20\x20\x20\x20░███\x20\x20░███\x20\x20░███\x20\x20\x20\x20░███\x20\x20░███\x20\x20\x20\x20███\x20\x20░███\x20\x20\x20\x20░███\x20░░███\x20\x20\x20\x20\x20███\x20\x20░███\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20░███\x20\x20\x20\x20░███\x20\x20███\x20\x20\x20\x20░███░░███\x20\x20\x20\x20\x20███\x0a\x20\x20\x20\x20█████\x20\x20\x20█████\x20█████\x20█████\x20\x20\x20█████\x20██████████\x20\x20\x20█████\x20\x20\x20█████\x20░░░███████░\x20\x20\x20█████\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20█████\x20\x20\x20█████░░█████████\x20\x20░░█████████\x0a\x20\x20\x20\x20░░░░░\x20\x20\x20░░░░░\x20░░░░░\x20░░░░░\x20\x20\x20░░░░░\x20░░░░░░░░░░\x20\x20\x20░░░░░\x20\x20\x20░░░░░\x20\x20\x20\x20░░░░░░░\x20\x20\x20\x20░░░░░\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20░░░░░\x20\x20\x20░░░░░\x20\x20░░░░░░░░░\x20\x20\x20\x20░░░░░░░░░\x20\x20\x0a\x20\x20\x20==============================================\x0a\x20\x20\x20\x20\x20\x20\x20BOT\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20:\x20PENGUSWAP\x20TESTNET\x0a\x20\x20\x20\x20\x20\x20\x20Telegram\x20Channel\x20:\x20@airdropasc\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20Telegram\x20Group\x20\x20\x20:\x20@autosultan_group\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20==============================================\x0a\x20\x20\x20','Transaction\x20failed\x20during\x20action:\x20','\x20Message:\x20','reason','435327FoPNna','msToTime','Asia/Singapore','logTransactionError','bigint','Secret\x20Phrase','animation','isToday','validateInput','\x20Timestamp:\x20','unix','255695EEduPm','\x20-\x20Error:\x20'];a0_0x2e15=function(){return _0x2a8cca;};return a0_0x2e15();}import a0_0x1b2d4e from'moment-timezone';import{ethers}from'ethers';import a0_0x2fb17d from'../../setup.js';function a0_0x55a1(_0x5cb2cc,_0x64b187){const _0x2e15cf=a0_0x2e15();return a0_0x55a1=function(_0x55a160,_0x45ff56){_0x55a160=_0x55a160-0xd6;let _0x939d59=_0x2e15cf[_0x55a160];return _0x939d59;},a0_0x55a1(_0x5cb2cc,_0x64b187);}export class Helper{static [a0_0x2c7c1f(0xdf)]=['🕛','🕐','🕑','🕒','🕓','🕔','🕕','🕖','🕗','🕘','🕙'];static[a0_0x2c7c1f(0x102)](_0x11f82c,_0x46fc5e='',_0x9c8aa0={},_0x4f2827='',_0x31a785=''){return new Promise(_0x58ed10=>{const _0x11ca9d=a0_0x55a1;let _0x3ec9d2;const _0x2dad55=this[_0x11ca9d(0xdf)];let _0x1e52a9=0x0,_0x126804=0x0;_0x46fc5e&&a0_0x32d894[_0x11ca9d(0xeb)](_0x4f2827,_0x46fc5e,_0x9c8aa0,_0x31a785),_0x3ec9d2=setInterval(()=>{const _0x5c5fe4=_0x11ca9d,_0x17783d=Math[_0x5c5fe4(0xea)](_0x126804%0x3c);a0_0x32d894[_0x5c5fe4(0xeb)](_0x4f2827,_0x46fc5e,_0x9c8aa0,_0x2dad55[_0x1e52a9]+'\x20'+_0x17783d+'s\x20'+_0x31a785+_0x5c5fe4(0xf6)),_0x1e52a9=(_0x1e52a9+0x1)%_0x2dad55[_0x5c5fe4(0x101)],_0x126804++;},0x3e8),setTimeout(()=>{clearInterval(_0x3ec9d2),_0x58ed10();},_0x11f82c);});}static[a0_0x2c7c1f(0xdc)](_0x38d463,_0x3a4866,_0x2ca128='',_0x4aa636={}){const _0x48663c=a0_0x2c7c1f,_0x376241=_0x38d463[_0x48663c(0xd8)]||_0x38d463['message']||_0x48663c(0xf7),_0x30099d=this[_0x48663c(0xf9)](),_0x32e2ed=_0x48663c(0xd6)+_0x3a4866+_0x48663c(0xe5)+_0x376241+_0x48663c(0x100)+_0x30099d;a0_0x32d894['log'](_0x3a4866,_0x2ca128,_0x4aa636,_0x32e2ed,'');if(_0x2ca128){const _0x1b291c='Error\x20during\x20action:\x20'+_0x3a4866+_0x48663c(0xd7)+_0x376241+_0x48663c(0xe2)+_0x30099d;a0_0x32d894['log'](_0x3a4866,_0x2ca128,_0x4aa636,_0x1b291c,'');}}static[a0_0x2c7c1f(0xf5)](_0x385492,_0x20ded5){const _0x495a1f=a0_0x2c7c1f;return Math[_0x495a1f(0xea)](Math[_0x495a1f(0x104)]()*(_0x20ded5-_0x385492+0x1))+_0x385492;}static['randomFloat'](_0x69ef51,_0x1b0bb1,_0x27cadd=0x4){const _0x2823ce=a0_0x2c7c1f,_0x2f7c45=parseFloat(_0x69ef51),_0x389063=parseFloat(_0x1b0bb1);return(Math[_0x2823ce(0x104)]()*(_0x389063-_0x2f7c45)+_0x2f7c45)['toFixed'](_0x27cadd);}static[a0_0x2c7c1f(0xf9)](_0x3a84da=a0_0x2c7c1f(0xdb)){const _0x431d04=a0_0x2c7c1f;return a0_0x1b2d4e()['tz'](_0x3a84da)[_0x431d04(0xe3)]()[_0x431d04(0xfe)]();}static[a0_0x2c7c1f(0xda)](_0x12460c){const _0x417cd1=a0_0x2c7c1f,_0x7f0898=Math[_0x417cd1(0xea)](_0x12460c/0x36ee80),_0x20cdbb=Math[_0x417cd1(0xea)](_0x12460c%0x36ee80/0xea60),_0xead2eb=Math[_0x417cd1(0xe9)](_0x12460c%0xea60/0x3e8);return _0x7f0898+'h\x20'+_0x20cdbb+'m\x20'+_0xead2eb+'s';}static[a0_0x2c7c1f(0xf8)](_0x15c856){const _0x5a8357=a0_0x2c7c1f;return JSON[_0x5a8357(0xef)](JSON[_0x5a8357(0x106)](_0x15c856,(_0x54d60c,_0x3ccffc)=>typeof _0x3ccffc===_0x5a8357(0xdd)?_0x3ccffc['toString']():_0x3ccffc));}static[a0_0x2c7c1f(0xe1)](_0x362a13){const _0x4a597e=a0_0x2c7c1f,_0x5eb1de=a0_0x1fe8e6['validateMnemonic'](_0x362a13);if(_0x5eb1de)return _0x4a597e(0xde);const _0x2dc850=/^(0x)?[a-fA-F0-9]{64}$/[_0x4a597e(0xfd)](_0x362a13);return _0x2dc850?_0x4a597e(0x103):_0x4a597e(0xfa);}static[a0_0x2c7c1f(0xe0)](_0x3be387){const _0x55f199=a0_0x2c7c1f,_0x54329c=new Date(),_0x482702=new Date(_0x3be387);return _0x54329c[_0x55f199(0xf2)]()===_0x482702[_0x55f199(0xf2)]();}static['validateAddress'](_0x54eeac){const _0x44bd85=a0_0x2c7c1f;if(!ethers['isAddress'](_0x54eeac))throw new Error(_0x44bd85(0xf3)+_0x54eeac);return _0x54eeac;}static[a0_0x2c7c1f(0xee)](){const _0x3dad34=a0_0x2c7c1f;console['log'](_0x3dad34(0x107));}static[a0_0x2c7c1f(0xec)](_0x29caaa){const _0x16d8a1=a0_0x2c7c1f;if(!(_0x29caaa in a0_0x2fb17d[_0x16d8a1(0xff)]))throw new Error(_0x16d8a1(0xf1)+_0x29caaa+_0x16d8a1(0xf0));return this['validateAddress'](a0_0x2fb17d[_0x16d8a1(0xff)][_0x29caaa]);}}
+import Twist from "./twister.js";
+import bip39 from "bip39";
+import moment from "moment-timezone";
+import { ethers } from "ethers";
+import setup from "../../setup.js";
+
+export class Helper {
+  static animation = [
+    "🕛",
+    "🕐",
+    "🕑",
+    "🕒",
+    "🕓",
+    "🕔",
+    "🕕",
+    "🕖",
+    "🕗",
+    "🕘",
+    "🕙",
+  ];
+
+  static delay(
+    ms,
+    accountKey = "",
+    accountData = {},
+    action = "",
+    status = ""
+  ) {
+    return new Promise((resolve) => {
+      let loading;
+      const spinnerChars = this.animation;
+      let spinnerIndex = 0;
+      let elapsedTime = 0;
+
+      if (accountKey) {
+        Twist.log(action, accountKey, accountData, status);
+      }
+
+      loading = setInterval(() => {
+        const seconds = Math.floor(elapsedTime % 60);
+        Twist.log(
+          action,
+          accountKey,
+          accountData,
+          `${spinnerChars[spinnerIndex]} ${seconds}s ${status}...`
+        );
+        spinnerIndex = (spinnerIndex + 1) % spinnerChars.length;
+        elapsedTime++;
+      }, 1000);
+
+      setTimeout(() => {
+        clearInterval(loading);
+        resolve();
+      }, ms);
+    });
+  }
+
+  static logTransactionError(error, action, accountKey = "", accountData = {}) {
+    const errorMessage =
+      error.reason || error.message || "Transaction reverted without reason.";
+    const timestamp = this.getCurrentTimestamp();
+    const logMessage = `Transaction failed during action: ${action} - Error: ${errorMessage} at ${timestamp}`;
+    Twist.log(action, accountKey, accountData, logMessage, "");
+    if (accountKey) {
+      const formattedMessage = `Error during action: ${action} Message: ${errorMessage} Timestamp: ${timestamp}`;
+      Twist.log(action, accountKey, accountData, formattedMessage, "");
+    }
+  }
+
+  static randomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
+  static randomFloat(min, max, decimals = 4) {
+    const minValue = parseFloat(min);
+    const maxValue = parseFloat(max);
+    return (Math.random() * (maxValue - minValue) + minValue).toFixed(decimals);
+  }
+
+  static getCurrentTimestamp(timezone = "Asia/Singapore") {
+    return moment().tz(timezone).unix().toString();
+  }
+
+  static msToTime(ms) {
+    const hours = Math.floor(ms / 3600000);
+    const minutes = Math.floor((ms % 3600000) / 60000);
+    const seconds = Math.round((ms % 60000) / 1000);
+    return `${hours}h ${minutes}m ${seconds}s`;
+  }
+
+  static serializeBigInt(obj) {
+    return JSON.parse(
+      JSON.stringify(obj, (_, value) =>
+        typeof value === "bigint" ? value.toString() : value
+      )
+    );
+  }
+
+  static validateInput(input) {
+    const isValidMnemonic = bip39.validateMnemonic(input);
+    if (isValidMnemonic) return "Secret Phrase";
+
+    const isValidPrivateKey = /^(0x)?[a-fA-F0-9]{64}$/.test(input);
+    return isValidPrivateKey ? "Private Key" : "Unknown";
+  }
+
+  static isToday(date) {
+    const today = new Date();
+    const compareDate = new Date(date);
+    return today.toDateString() === compareDate.toDateString();
+  }
+
+  static validateAddress(address) {
+    if (!ethers.isAddress(address)) {
+      throw new Error(`Invalid address: ${address}`);
+    }
+    return address;
+  }
+
+  static showSkelLogo() {
+    console.log(`
+      █████████   █████ ███████████   ██████████   ███████████      ███████    ███████████       █████████    █████████    █████████
+     ███░░░░░███ ░░███ ░░███░░░░░███ ░░███░░░░███ ░░███░░░░░███   ███░░░░░███ ░░███░░░░░███     ███░░░░░███  ███░░░░░███  ███░░░░░███
+    ░███    ░███  ░███  ░███    ░███  ░███   ░░███ ░███    ░███  ███     ░░███ ░███    ░███    ░███    ░███ ░███    ░░░  ███     ░░░
+    ░███████████  ░███  ░██████████   ░███    ░███ ░██████████  ░███      ░███ ░██████████     ░███████████ ░░█████████ ░███         
+    ░███░░░░░███  ░███  ░███░░░░░███  ░███    ░███ ░███░░░░░███ ░███      ░███ ░███░░░░░░      ░███░░░░░███  ░░░░░░░░███░███         
+    ░███    ░███  ░███  ░███    ░███  ░███    ███  ░███    ░███ ░░███     ███  ░███            ░███    ░███  ███    ░███░░███     ███
+    █████   █████ █████ █████   █████ ██████████   █████   █████ ░░░███████░   █████           █████   █████░░█████████  ░░█████████
+    ░░░░░   ░░░░░ ░░░░░ ░░░░░   ░░░░░ ░░░░░░░░░░   ░░░░░   ░░░░░    ░░░░░░░    ░░░░░           ░░░░░   ░░░░░  ░░░░░░░░░    ░░░░░░░░░  
+   ==============================================
+       BOT              : PENGUSWAP TESTNET
+       Telegram Channel : @airdropasc               
+       Telegram Group   : @autosultan_group         
+   ==============================================
+   `);
+  }
+
+  static getContract(contractName) {
+    if (!(contractName in setup.constant)) {
+      throw new Error(`Contract ${contractName} not found in contractAddress`);
+    }
+    return this.validateAddress(setup.constant[contractName]);
+  }
+}

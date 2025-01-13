@@ -1,1 +1,106 @@
-function a0_0x2d27(_0xc76f37,_0x28559d){const _0x4eab68=a0_0x4eab();return a0_0x2d27=function(_0x2d27fd,_0xcf751e){_0x2d27fd=_0x2d27fd-0x72;let _0x29b798=_0x4eab68[_0x2d27fd];return _0x29b798;},a0_0x2d27(_0xc76f37,_0x28559d);}const a0_0x1f3595=a0_0x2d27;function a0_0x4eab(){const _0x266db4=['91352RtGVLR','CONTRACT_ADDRESS','FIXED_GAS_LIMIT','\x20to\x20','error','walletInstance','15faouXm','231ISmTEm','coreInstance','N/A','148680xjJvQR','ROUTER_ADDRESS','349236mmIdoF','encodeFunctionData','symbol','24042cAVfjm','584430NFVtnH','sendTransaction','address','parseEther','ROUTER','2395683NkCLvk','getTransactionCount','Failed\x20to\x20swap\x20tokens','provider','message','balanceOf','toString','interface','toFixed','accounts','contracts','handleError','decimal','processApprove','🔄\x20Swapping\x20','160RtngDh','\x20was\x20successful!','waitForTransactionConfirmation','\x20for\x20','serviceInstance','hash','FIXED_GAS_PRICE','355jcHvEZ','swapToken','retryTransaction','323213nKWQVq','fetchTokenDetails','exactInputSingle','✔️\x20\x20Swapping\x20'];a0_0x4eab=function(){return _0x266db4;};return a0_0x4eab();}(function(_0x42d6c7,_0x5190be){const _0x38816a=a0_0x2d27,_0xeef414=_0x42d6c7();while(!![]){try{const _0x3ef2da=parseInt(_0x38816a(0xa1))/0x1+parseInt(_0x38816a(0x75))/0x2+-parseInt(_0x38816a(0x9d))/0x3*(-parseInt(_0x38816a(0xa3))/0x4)+parseInt(_0x38816a(0x90))/0x5*(-parseInt(_0x38816a(0x74))/0x6)+-parseInt(_0x38816a(0x9e))/0x7*(-parseInt(_0x38816a(0x97))/0x8)+-parseInt(_0x38816a(0x7a))/0x9+-parseInt(_0x38816a(0x89))/0xa*(parseInt(_0x38816a(0x93))/0xb);if(_0x3ef2da===_0x5190be)break;else _0xeef414['push'](_0xeef414['shift']());}catch(_0x4af379){_0xeef414['push'](_0xeef414['shift']());}}}(a0_0x4eab,0x38fef));import{ethers}from'ethers';import{ERC20_ABI}from'../../abi/abi.js';import a0_0x24c6cc from'../../utils/twister.js';export default class SwapManager{constructor(_0x21173c,_0xccc714){const _0xfc1443=a0_0x2d27;this[_0xfc1443(0x9f)]=_0x21173c,this['serviceInstance']=_0xccc714;}async[a0_0x1f3595(0x91)](_0x3c6681,_0x55540b,_0x53160a,_0xe9d3b0,_0x5399a8=![]){const _0x147bae=a0_0x1f3595;try{const _0x39bee2=new ethers['Contract'](_0x3c6681,ERC20_ABI,this[_0x147bae(0x9f)][_0x147bae(0x9c)]),[_0x3420ab,_0xcbc157]=await Promise['all']([this['coreInstance']['fetchTokenDetails'](_0x3c6681),this[_0x147bae(0x9f)][_0x147bae(0x94)](_0x55540b)]);let _0x96c30f=_0x53160a;_0x5399a8&&(_0x96c30f=await _0x39bee2[_0x147bae(0x7f)](this['coreInstance']['address']),await this[_0x147bae(0x9f)][_0x147bae(0x87)](_0x3c6681,this[_0x147bae(0x9f)]['CONTRACT_ADDRESS'][_0x147bae(0xa2)]));const _0x3167cb=[_0x3c6681,_0x55540b,_0xe9d3b0,this[_0x147bae(0x9f)]['address'],Math['floor'](Date['now']()/0x3e8)+0x708,_0x5399a8?_0x96c30f[_0x147bae(0x80)]():ethers[_0x147bae(0x78)](_0x96c30f['toString']()),0x0,0x0],_0x55ea61=this['coreInstance'][_0x147bae(0x84)][_0x147bae(0x79)][_0x147bae(0x81)][_0x147bae(0x72)](_0x147bae(0x95),[_0x3167cb]),_0xb992df=_0x5399a8?Number(Number(_0x96c30f['toString']())/Number(0xa**_0x3420ab[_0x147bae(0x86)][_0x147bae(0x80)]()))[_0x147bae(0x82)](0x8):Number(_0x96c30f)['toFixed'](0x8),_0x1f2961={'to':this[_0x147bae(0x9f)][_0x147bae(0x98)][_0x147bae(0xa2)],'from':this['coreInstance'][_0x147bae(0x77)],'value':_0x5399a8?0x0:ethers[_0x147bae(0x78)](_0x96c30f[_0x147bae(0x80)]()),'data':_0x55ea61,'gasLimit':this[_0x147bae(0x9f)][_0x147bae(0x99)],'gasPrice':this[_0x147bae(0x9f)][_0x147bae(0x8f)],'nonce':await this[_0x147bae(0x9f)][_0x147bae(0x7d)][_0x147bae(0x7b)](this[_0x147bae(0x9f)][_0x147bae(0x77)])},_0xe12ba0=_0x147bae(0x88)+_0xb992df+'\x20'+_0x3420ab[_0x147bae(0x73)]+_0x147bae(0x9a)+_0xcbc157['symbol'],_0x54887b=await this[_0x147bae(0x8d)][_0x147bae(0x92)](async()=>{const _0x81bdd1=_0x147bae;return await this[_0x81bdd1(0x8d)]['handleTransaction'](async()=>await this[_0x81bdd1(0x9f)][_0x81bdd1(0x9c)][_0x81bdd1(0x76)](_0x1f2961),_0xe12ba0);});if(!_0x54887b){this[_0x147bae(0x9f)][_0x147bae(0x85)](_0xe12ba0,'Transaction\x20failed\x20to\x20send.');return;}const _0x422a6e=_0x54887b[_0x147bae(0x8e)]||_0x147bae(0xa0);await this[_0x147bae(0x8d)][_0x147bae(0x8b)](_0x422a6e,_0xe12ba0),a0_0x24c6cc['log'](''+_0xe12ba0,this['coreInstance'][_0x147bae(0x83)],this[_0x147bae(0x9f)],_0x147bae(0x96)+_0xb992df+'\x20'+_0x3420ab[_0x147bae(0x73)]+_0x147bae(0x8c)+_0xcbc157[_0x147bae(0x73)]+_0x147bae(0x8a));}catch(_0x11f6a9){return console[_0x147bae(0x9b)](_0x11f6a9),await this[_0x147bae(0x9f)][_0x147bae(0x85)](_0x147bae(0x7c),_0x11f6a9[_0x147bae(0x7e)]),null;}}}
+import { ethers } from "ethers";
+import { ERC20_ABI } from "../../abi/abi.js";
+import Twist from "../../utils/twister.js";
+export default class SwapManager {
+  constructor(core, serviceManager) {
+    this.coreInstance = core;
+    this.serviceInstance = serviceManager;
+  }
+
+  async swapToken(token0, token1, amountIn, fee, isSwapToCtc = false) {
+    try {
+      const token0Contract = new ethers.Contract(
+        token0,
+        ERC20_ABI,
+        this.coreInstance.walletInstance
+      );
+
+      const [token0Details, token1Details] = await Promise.all([
+        this.coreInstance.fetchTokenDetails(token0),
+        this.coreInstance.fetchTokenDetails(token1),
+      ]);
+
+      let balance = amountIn;
+      if (isSwapToCtc) {
+        balance = await token0Contract.balanceOf(this.coreInstance.address);
+        await this.coreInstance.processApprove(
+          token0,
+          this.coreInstance.CONTRACT_ADDRESS.ROUTER_ADDRESS
+        );
+      }
+
+      const params = [
+        token0,
+        token1,
+        fee,
+        this.coreInstance.address,
+        Math.floor(Date.now() / 1000) + 1800,
+        isSwapToCtc
+          ? balance.toString()
+          : ethers.parseEther(balance.toString()),
+        0,
+        0,
+      ];
+
+      const data =
+        this.coreInstance.contracts.ROUTER.interface.encodeFunctionData(
+          "exactInputSingle",
+          [params]
+        );
+
+      const formatAmount = isSwapToCtc
+        ? Number(
+            Number(balance.toString()) /
+              Number(10 ** token0Details.decimal.toString())
+          ).toFixed(8)
+        : Number(balance).toFixed(8);
+
+      const transaction = {
+        to: this.coreInstance.CONTRACT_ADDRESS.ROUTER_ADDRESS,
+        from: this.coreInstance.address,
+        value: isSwapToCtc ? 0 : ethers.parseEther(balance.toString()),
+        data: data,
+        gasLimit: this.coreInstance.FIXED_GAS_LIMIT,
+        gasPrice: this.coreInstance.FIXED_GAS_PRICE,
+        nonce: await this.coreInstance.provider.getTransactionCount(
+          this.coreInstance.address
+        ),
+      };
+
+      const action = `🔄 Swapping ${formatAmount} ${token0Details.symbol} to ${token1Details.symbol}`;
+
+      const tx = await this.serviceInstance.retryTransaction(async () => {
+        return await this.serviceInstance.handleTransaction(
+          async () =>
+            await this.coreInstance.walletInstance.sendTransaction(transaction),
+          action
+        );
+      });
+
+      if (!tx) {
+        this.coreInstance.handleError(action, `Transaction failed to send.`);
+        return;
+      }
+
+      const transactionHash = tx.hash || "N/A";
+      await this.serviceInstance.waitForTransactionConfirmation(
+        transactionHash,
+        action
+      );
+
+      Twist.log(
+        `${action}`,
+        this.coreInstance.accounts,
+        this.coreInstance,
+        `✔️  Swapping ${formatAmount} ${token0Details.symbol} for ${token1Details.symbol} was successful!`
+      );
+    } catch (error) {
+      console.error(error);
+      await this.coreInstance.handleError(
+        "Failed to swap tokens",
+        error.message
+      );
+      return null;
+    }
+  }
+}

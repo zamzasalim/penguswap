@@ -1,1 +1,316 @@
-function a0_0x399e(){const _0x29f415=['pow','now','getTransactionCount','addLiquidity','fetchTokenDetails','2eaByRm','CONTRACT_ADDRESS','sendTransaction','getPoolAddress','config','serviceInstance','FACTORY','getPool','retryTransaction','25CnbQCc','address','Failed\x20to\x20deploy\x20liquidity\x20pool\x20','Failed\x20to\x20added\x20liquidity!','toString','div','N/A','2971416pELlex','✔️\x20\x20Successfully\x20Collecting\x20fee\x20for\x20possitionId\x20','liquidity','1357284QMVsBa','Failed\x20to\x20deploy\x20liquidity\x20pool','sqrt','waitForTransactionConfirmation','floor','collect','getPoolData','POSITION_MANAGER_ADDRESS','tick','interface','28576zqlBfR','🔨\x20Adding\x20100\x20\x1b[1m','encodeFunctionData','handleTransaction','POSITION_MANAGER','all','FIXED_GAS_LIMIT','handleError','collectFee','liquidityPool1','99yWpexW','createAndInitializePoolIfNecessary','Contract','symbol','✔️\x20\x20Successfully\x20added\x20liquidity\x20100\x20','log','contracts','\x20contract\x20at:\x20','Failed\x20to\x20collecting\x20Fee!','16289295juzsCQ','message','hash','tickSpacing','7bFguUF','2062626ZCflGk','❌\x20Transaction\x20failed\x20to\x20send.','333533FDhZHA','fee','walletInstance','coreInstance','FIXED_GAS_PRICE','multipliedBy','409730YZqFLm','provider','Failed\x20to\x20Collecting\x20fee','accounts','integerValue','\x20and\x20100\x20','encodePriceSqrt'];a0_0x399e=function(){return _0x29f415;};return a0_0x399e();}const a0_0x479959=a0_0x1554;(function(_0x3c997d,_0x67787d){const _0x4e06c7=a0_0x1554,_0x3650c4=_0x3c997d();while(!![]){try{const _0x360dee=parseInt(_0x4e06c7(0x17e))/0x1*(parseInt(_0x4e06c7(0x190))/0x2)+-parseInt(_0x4e06c7(0x1a3))/0x3+-parseInt(_0x4e06c7(0x1ad))/0x4*(-parseInt(_0x4e06c7(0x199))/0x5)+-parseInt(_0x4e06c7(0x17c))/0x6*(parseInt(_0x4e06c7(0x17b))/0x7)+-parseInt(_0x4e06c7(0x1a0))/0x8+-parseInt(_0x4e06c7(0x1b7))/0x9*(parseInt(_0x4e06c7(0x184))/0xa)+parseInt(_0x4e06c7(0x177))/0xb;if(_0x360dee===_0x67787d)break;else _0x3650c4['push'](_0x3650c4['shift']());}catch(_0x3652ac){_0x3650c4['push'](_0x3650c4['shift']());}}}(a0_0x399e,0x38959));import{ethers}from'ethers';import a0_0x2544e1 from'bignumber.js';import a0_0x303c29 from'../../utils/twister.js';import{nearestUsableTick}from'@uniswap/v3-sdk';import{POOL_ABI}from'../../abi/abi.js';import a0_0x2ad473 from'../../../setup.js';a0_0x2544e1[a0_0x479959(0x194)]({'EXPONENTIAL_AT':0xf423f,'DECIMAL_PLACES':0x28});function a0_0x1554(_0x3a0e43,_0x2525a8){const _0x399efb=a0_0x399e();return a0_0x1554=function(_0x15541d,_0x4d297e){_0x15541d=_0x15541d-0x177;let _0x5b7390=_0x399efb[_0x15541d];return _0x5b7390;},a0_0x1554(_0x3a0e43,_0x2525a8);}export default class AddLiquidityManager{constructor(_0x33a9a5,_0x6a4310){const _0x3a8a18=a0_0x479959;this[_0x3a8a18(0x181)]=_0x33a9a5,this[_0x3a8a18(0x195)]=_0x6a4310;}async['getPoolData'](_0x9b61ff){const _0x3a83a6=a0_0x479959,_0x1eda09=new ethers[(_0x3a83a6(0x1b9))](_0x9b61ff,POOL_ABI,this['coreInstance'][_0x3a83a6(0x180)]),[_0x10ba7b,_0x4d6c85,_0x3f78a1,_0x5e0b79]=await Promise[_0x3a83a6(0x1b2)]([_0x1eda09['tickSpacing'](),_0x1eda09[_0x3a83a6(0x17f)](),_0x1eda09[_0x3a83a6(0x1a2)](),_0x1eda09['slot0']()]);return{'tickSpacing':_0x10ba7b,'fee':_0x4d6c85,'liquidity':_0x3f78a1,'sqrtPriceX96':_0x5e0b79[0x0],'tick':_0x5e0b79[0x1]};}[a0_0x479959(0x18a)](_0x3c6165,_0x1b8c81){const _0x79cf00=a0_0x479959,_0x423c82=new a0_0x2544e1(_0x3c6165[_0x79cf00(0x19d)]())[_0x79cf00(0x19e)](_0x1b8c81[_0x79cf00(0x19d)]())[_0x79cf00(0x1a5)]()[_0x79cf00(0x183)](new a0_0x2544e1(0x2)[_0x79cf00(0x18b)](0x60))[_0x79cf00(0x188)](a0_0x2544e1['ROUND_DOWN'])['toFixed']();return BigInt(_0x423c82);}async['getPoolAddress'](_0x4f5c12,_0x8cc308,_0x33e9f0){const _0x5dccb8=a0_0x479959,_0x52c460=await this[_0x5dccb8(0x181)][_0x5dccb8(0x1bd)][_0x5dccb8(0x196)][_0x5dccb8(0x197)](_0x4f5c12,_0x8cc308,_0x33e9f0);return _0x52c460;}async['deployPool'](_0x120d2f,_0x1bb980,_0x5713ba,_0x5a3a7f){const _0xd67d33=a0_0x479959;try{let _0x2fbcb3=[ethers['getAddress'](_0x120d2f),ethers['getAddress'](_0x1bb980),_0x5713ba,_0x5a3a7f];const [_0x39b8de,_0x12b290]=await Promise[_0xd67d33(0x1b2)]([this[_0xd67d33(0x181)]['fetchTokenDetails'](_0x120d2f),this[_0xd67d33(0x181)]['fetchTokenDetails'](_0x1bb980)]);let _0x5a404a=this[_0xd67d33(0x181)]['contracts'][_0xd67d33(0x1b1)]['interface']['encodeFunctionData'](_0xd67d33(0x1b8),_0x2fbcb3);const _0x3de614={'to':this[_0xd67d33(0x181)][_0xd67d33(0x191)]['POSITION_MANAGER_ADDRESS'],'from':this[_0xd67d33(0x181)][_0xd67d33(0x19a)],'value':0x0,'data':_0x5a404a,'gasLimit':this[_0xd67d33(0x181)][_0xd67d33(0x1b3)],'gasPrice':this['coreInstance'][_0xd67d33(0x182)],'nonce':await this[_0xd67d33(0x181)][_0xd67d33(0x185)][_0xd67d33(0x18d)](this[_0xd67d33(0x181)][_0xd67d33(0x19a)])};try{const _0x31f5ff='🔨\x20Deploying\x20Liquidity\x20Pool\x20Contract\x20for\x20'+_0x39b8de[_0xd67d33(0x1ba)]+'/'+_0x12b290['symbol'],_0x24d787=await this[_0xd67d33(0x195)][_0xd67d33(0x198)](async()=>{const _0x352234=_0xd67d33;return await this[_0x352234(0x195)][_0x352234(0x1b0)](async()=>await this['coreInstance'][_0x352234(0x180)][_0x352234(0x192)](_0x3de614),_0x31f5ff);});if(!_0x24d787){this['coreInstance'][_0xd67d33(0x1b4)](_0x31f5ff,_0xd67d33(0x17d));return;}const _0x396fcc=_0x24d787[_0xd67d33(0x179)]||_0xd67d33(0x19f);await this[_0xd67d33(0x195)][_0xd67d33(0x1a6)](_0x396fcc,_0x31f5ff);const _0xdcf32f=await this[_0xd67d33(0x181)][_0xd67d33(0x1bd)][_0xd67d33(0x196)][_0xd67d33(0x197)](_0x120d2f,_0x1bb980,_0x5713ba);return a0_0x303c29[_0xd67d33(0x1bc)](_0x31f5ff,this['coreInstance'][_0xd67d33(0x187)],this[_0xd67d33(0x181)],'✔️\x20\x20Successfully\x20deployed\x20pool\x20'+_0x39b8de['symbol']+'/'+_0x12b290[_0xd67d33(0x1ba)]+_0xd67d33(0x1be)+_0xdcf32f),_0xdcf32f;}catch(_0x1272ed){this[_0xd67d33(0x181)][_0xd67d33(0x1b4)](_0xd67d33(0x19b)+_0x39b8de[_0xd67d33(0x1ba)]+'/'+_0x12b290[_0xd67d33(0x1ba)],''+_0x1272ed[_0xd67d33(0x178)]);}}catch(_0x4766a4){this[_0xd67d33(0x181)][_0xd67d33(0x1b4)](_0xd67d33(0x1a4),''+_0x4766a4[_0xd67d33(0x178)]);}}async[a0_0x479959(0x18e)](_0x55b1ba,_0x4d8532,_0x4f2aed){const _0x68766=a0_0x479959;try{const [_0x40973b,_0x4a9d86,_0x5a1615]=await Promise[_0x68766(0x1b2)]([this[_0x68766(0x181)]['fetchTokenDetails'](_0x55b1ba),this[_0x68766(0x181)][_0x68766(0x18f)](_0x4d8532),this[_0x68766(0x193)](_0x55b1ba,_0x4d8532,_0x4f2aed)]),_0x18bdb4=await this[_0x68766(0x1a9)](_0x5a1615),_0x111e20=[_0x55b1ba,_0x4d8532,_0x18bdb4[_0x68766(0x17f)],nearestUsableTick(Number(_0x18bdb4['tick']),Number(_0x18bdb4[_0x68766(0x17a)]))-Number(_0x18bdb4['tickSpacing'])*0x2,nearestUsableTick(Number(_0x18bdb4[_0x68766(0x1ab)]),Number(_0x18bdb4[_0x68766(0x17a)]))+Number(_0x18bdb4[_0x68766(0x17a)])*0x2,BigInt(a0_0x2ad473['liquidityPool0']*0xde0b6b3a7640000)[_0x68766(0x19d)](),BigInt(a0_0x2ad473[_0x68766(0x1b6)]*0xde0b6b3a7640000)[_0x68766(0x19d)](),0x0,0x0,this[_0x68766(0x181)][_0x68766(0x19a)],Math[_0x68766(0x1a7)](Date[_0x68766(0x18c)]()/0x3e8)+0x3c*0xa];let _0x6d9e35=this[_0x68766(0x181)][_0x68766(0x1bd)][_0x68766(0x1b1)][_0x68766(0x1ac)][_0x68766(0x1af)]('mint',[_0x111e20]);const _0x1d7a78={'to':this[_0x68766(0x181)][_0x68766(0x191)][_0x68766(0x1aa)],'from':this['coreInstance']['address'],'value':0x0,'data':_0x6d9e35,'gasLimit':this['coreInstance'][_0x68766(0x1b3)],'gasPrice':this[_0x68766(0x181)][_0x68766(0x182)],'nonce':await this[_0x68766(0x181)][_0x68766(0x185)][_0x68766(0x18d)](this[_0x68766(0x181)][_0x68766(0x19a)])};try{const _0x58d826=_0x68766(0x1ae)+_0x40973b[_0x68766(0x1ba)]+'\x1b[0m\x20and\x20100\x20\x1b[1m'+_0x4a9d86['symbol']+'\x1b[0m\x20to\x20pool.',_0x72e842=await this[_0x68766(0x195)][_0x68766(0x198)](async()=>{const _0x563740=_0x68766;return await this[_0x563740(0x195)]['handleTransaction'](async()=>await this['coreInstance']['walletInstance'][_0x563740(0x192)](_0x1d7a78),_0x58d826);});if(!_0x72e842){this[_0x68766(0x181)][_0x68766(0x1b4)](_0x58d826,_0x68766(0x17d));return;}const _0x512c69=_0x72e842['hash']||_0x68766(0x19f);await this[_0x68766(0x195)]['waitForTransactionConfirmation'](_0x512c69,_0x58d826),a0_0x303c29[_0x68766(0x1bc)](''+_0x58d826,this[_0x68766(0x181)][_0x68766(0x187)],this['coreInstance'],_0x68766(0x1bb)+_0x40973b['symbol']+_0x68766(0x189)+_0x4a9d86[_0x68766(0x1ba)]+'\x20to\x20pool.');}catch(_0x3eb835){return this[_0x68766(0x181)][_0x68766(0x1b4)]('Failed\x20to\x20add\x20liquidity\x20to\x20pool',''+_0x3eb835[_0x68766(0x178)]),null;}}catch(_0x3e7ac9){console['error'](_0x3e7ac9),this[_0x68766(0x181)][_0x68766(0x1b4)](_0x68766(0x19c),''+_0x3e7ac9[_0x68766(0x178)]);}}async[a0_0x479959(0x1b5)](_0x1a7b09){const _0x3a61d8=a0_0x479959;try{const {POSITION_MANAGER:_0x4214ab}=this[_0x3a61d8(0x181)][_0x3a61d8(0x1bd)],_0x3e3b37=[_0x1a7b09,this['coreInstance']['address'],0xffffffffffffffffffffffffffffffffn,0xffffffffffffffffffffffffffffffffn];let _0x65c648=_0x4214ab['interface'][_0x3a61d8(0x1af)](_0x3a61d8(0x1a8),[_0x3e3b37]);const _0x11f1a2={'to':this['coreInstance']['CONTRACT_ADDRESS'][_0x3a61d8(0x1aa)],'from':this[_0x3a61d8(0x181)][_0x3a61d8(0x19a)],'value':0x0,'data':_0x65c648,'gasLimit':this['coreInstance'][_0x3a61d8(0x1b3)],'gasPrice':this['coreInstance'][_0x3a61d8(0x182)],'nonce':await this['coreInstance'][_0x3a61d8(0x185)][_0x3a61d8(0x18d)](this[_0x3a61d8(0x181)][_0x3a61d8(0x19a)])};try{const _0x54fd0b='🔨\x20Collecting\x20fee\x20for\x20possitionId\x20'+_0x1a7b09['toString'](),_0x22c471=await this[_0x3a61d8(0x195)][_0x3a61d8(0x198)](async()=>{const _0x49e73d=_0x3a61d8;return await this[_0x49e73d(0x195)][_0x49e73d(0x1b0)](async()=>await this[_0x49e73d(0x181)][_0x49e73d(0x180)][_0x49e73d(0x192)](_0x11f1a2),_0x54fd0b);});if(!_0x22c471){this[_0x3a61d8(0x181)][_0x3a61d8(0x1b4)](_0x54fd0b,_0x3a61d8(0x17d));return;}const _0xe5ba3b=_0x22c471[_0x3a61d8(0x179)]||_0x3a61d8(0x19f);await this[_0x3a61d8(0x195)][_0x3a61d8(0x1a6)](_0xe5ba3b,_0x54fd0b),a0_0x303c29[_0x3a61d8(0x1bc)](''+_0x54fd0b,this[_0x3a61d8(0x181)]['accounts'],this[_0x3a61d8(0x181)],_0x3a61d8(0x1a1)+_0x1a7b09[_0x3a61d8(0x19d)]());}catch(_0x19be53){return this[_0x3a61d8(0x181)][_0x3a61d8(0x1b4)](_0x3a61d8(0x186),''+_0x19be53[_0x3a61d8(0x178)]),null;}}catch(_0xb1056f){console['error'](_0xb1056f),this[_0x3a61d8(0x181)][_0x3a61d8(0x1b4)](_0x3a61d8(0x1bf),''+_0xb1056f[_0x3a61d8(0x178)]);}}}
+import { ethers } from "ethers";
+import bn from "bignumber.js";
+import Twist from "../../utils/twister.js";
+import { nearestUsableTick } from "@uniswap/v3-sdk";
+import { POOL_ABI } from "../../abi/abi.js";
+import setup from "../../../setup.js";
+
+bn.config({ EXPONENTIAL_AT: 999999, DECIMAL_PLACES: 40 });
+
+export default class AddLiquidityManager {
+  constructor(core, serviceManager) {
+    this.coreInstance = core;
+    this.serviceInstance = serviceManager;
+  }
+
+  async getPoolData(poolAddress) {
+    const poolContract = new ethers.Contract(
+      poolAddress,
+      POOL_ABI,
+      this.coreInstance.walletInstance
+    );
+
+    const [tickSpacing, fee, liquidity, slot0] = await Promise.all([
+      poolContract.tickSpacing(),
+      poolContract.fee(),
+      poolContract.liquidity(),
+      poolContract.slot0(),
+    ]);
+
+    return {
+      tickSpacing: tickSpacing,
+      fee: fee,
+      liquidity: liquidity,
+      sqrtPriceX96: slot0[0],
+      tick: slot0[1],
+    };
+  }
+
+  encodePriceSqrt(reserve1, reserve0) {
+    const result = new bn(reserve1.toString())
+      .div(reserve0.toString())
+      .sqrt()
+      .multipliedBy(new bn(2).pow(96))
+      .integerValue(bn.ROUND_DOWN)
+      .toFixed();
+
+    return BigInt(result);
+  }
+
+  async getPoolAddress(token0, token1, fee) {
+    const poolAddress = await this.coreInstance.contracts.FACTORY.getPool(
+      token0,
+      token1,
+      fee
+    );
+    return poolAddress;
+  }
+
+  async deployPool(token0, token1, fee, price) {
+    try {
+      let params = [
+        ethers.getAddress(token0),
+        ethers.getAddress(token1),
+        fee,
+        price,
+      ];
+
+      const [token0Details, token1Details] = await Promise.all([
+        this.coreInstance.fetchTokenDetails(token0),
+        this.coreInstance.fetchTokenDetails(token1),
+      ]);
+
+      let data =
+        this.coreInstance.contracts.POSITION_MANAGER.interface.encodeFunctionData(
+          "createAndInitializePoolIfNecessary",
+          params
+        );
+
+      const transaction = {
+        to: this.coreInstance.CONTRACT_ADDRESS.POSITION_MANAGER_ADDRESS,
+        from: this.coreInstance.address,
+        value: 0,
+        data: data,
+        gasLimit: this.coreInstance.FIXED_GAS_LIMIT,
+        gasPrice: this.coreInstance.FIXED_GAS_PRICE,
+        nonce: await this.coreInstance.provider.getTransactionCount(
+          this.coreInstance.address
+        ),
+      };
+
+      try {
+        const action = `🔨 Deploying Liquidity Pool Contract for ${token0Details.symbol}/${token1Details.symbol}`;
+        const tx = await this.serviceInstance.retryTransaction(async () => {
+          return await this.serviceInstance.handleTransaction(
+            async () =>
+              await this.coreInstance.walletInstance.sendTransaction(
+                transaction
+              ),
+            action
+          );
+        });
+
+        if (!tx) {
+          this.coreInstance.handleError(
+            action,
+            `❌ Transaction failed to send.`
+          );
+          return;
+        }
+
+        const transactionHash = tx.hash || "N/A";
+
+        await this.serviceInstance.waitForTransactionConfirmation(
+          transactionHash,
+          action
+        );
+
+        const poolAddress = await this.coreInstance.contracts.FACTORY.getPool(
+          token0,
+          token1,
+          fee
+        );
+
+        Twist.log(
+          action,
+          this.coreInstance.accounts,
+          this.coreInstance,
+          `✔️  Successfully deployed pool ${token0Details.symbol}/${token1Details.symbol} contract at: ${poolAddress}`
+        );
+
+        return poolAddress;
+      } catch (error) {
+        this.coreInstance.handleError(
+          `Failed to deploy liquidity pool ${token0Details.symbol}/${token1Details.symbol}`,
+          `${error.message}`
+        );
+      }
+    } catch (error) {
+      this.coreInstance.handleError(
+        `Failed to deploy liquidity pool`,
+        `${error.message}`
+      );
+    }
+  }
+
+  async addLiquidity(token0, token1, fee) {
+    try {
+      const [token0Details, token1Details, poolAddress] = await Promise.all([
+        this.coreInstance.fetchTokenDetails(token0),
+        this.coreInstance.fetchTokenDetails(token1),
+        this.getPoolAddress(token0, token1, fee),
+      ]);
+
+      const poolData = await this.getPoolData(poolAddress);
+
+      const params = [
+        token0,
+        token1,
+        poolData.fee,
+        nearestUsableTick(Number(poolData.tick), Number(poolData.tickSpacing)) -
+          Number(poolData.tickSpacing) * 2,
+        nearestUsableTick(Number(poolData.tick), Number(poolData.tickSpacing)) +
+          Number(poolData.tickSpacing) * 2,
+        BigInt(setup.liquidityPool0 * 1e18).toString(),
+        BigInt(setup.liquidityPool1 * 1e18).toString(),
+        0,
+        0,
+        this.coreInstance.address,
+        Math.floor(Date.now() / 1000) + 60 * 10,
+      ];
+
+      let data =
+        this.coreInstance.contracts.POSITION_MANAGER.interface.encodeFunctionData(
+          "mint",
+          [params]
+        );
+
+      const transaction = {
+        to: this.coreInstance.CONTRACT_ADDRESS.POSITION_MANAGER_ADDRESS,
+        from: this.coreInstance.address,
+        value: 0,
+        data: data,
+        gasLimit: this.coreInstance.FIXED_GAS_LIMIT,
+        gasPrice: this.coreInstance.FIXED_GAS_PRICE,
+        nonce: await this.coreInstance.provider.getTransactionCount(
+          this.coreInstance.address
+        ),
+      };
+
+      try {
+        const action = `🔨 Adding 100 \x1b[1m${token0Details.symbol}\x1b[0m and 100 \x1b[1m${token1Details.symbol}\x1b[0m to pool.`;
+        const tx = await this.serviceInstance.retryTransaction(async () => {
+          return await this.serviceInstance.handleTransaction(
+            async () =>
+              await this.coreInstance.walletInstance.sendTransaction(
+                transaction
+              ),
+            action
+          );
+        });
+
+        if (!tx) {
+          this.coreInstance.handleError(
+            action,
+            `❌ Transaction failed to send.`
+          );
+          return;
+        }
+
+        const transactionHash = tx.hash || "N/A";
+
+        await this.serviceInstance.waitForTransactionConfirmation(
+          transactionHash,
+          action
+        );
+
+        Twist.log(
+          `${action}`,
+          this.coreInstance.accounts,
+          this.coreInstance,
+          `✔️  Successfully added liquidity 100 ${token0Details.symbol} and 100 ${token1Details.symbol} to pool.`
+        );
+      } catch (error) {
+        this.coreInstance.handleError(
+          `Failed to add liquidity to pool`,
+          `${error.message}`
+        );
+
+        return null;
+      }
+    } catch (error) {
+      console.error(error);
+      this.coreInstance.handleError(
+        `Failed to added liquidity!`,
+        `${error.message}`
+      );
+    }
+  }
+
+  async collectFee(positionId) {
+    try {
+      const { POSITION_MANAGER } = this.coreInstance.contracts;
+
+      const params = [
+        positionId,
+        this.coreInstance.address,
+        340282366920938463463374607431768211455n,
+        340282366920938463463374607431768211455n,
+      ];
+
+      let data = POSITION_MANAGER.interface.encodeFunctionData("collect", [
+        params,
+      ]);
+
+      const transaction = {
+        to: this.coreInstance.CONTRACT_ADDRESS.POSITION_MANAGER_ADDRESS,
+        from: this.coreInstance.address,
+        value: 0,
+        data: data,
+        gasLimit: this.coreInstance.FIXED_GAS_LIMIT,
+        gasPrice: this.coreInstance.FIXED_GAS_PRICE,
+        nonce: await this.coreInstance.provider.getTransactionCount(
+          this.coreInstance.address
+        ),
+      };
+
+      try {
+        const action = `🔨 Collecting fee for possitionId ${positionId.toString()}`;
+        const tx = await this.serviceInstance.retryTransaction(async () => {
+          return await this.serviceInstance.handleTransaction(
+            async () =>
+              await this.coreInstance.walletInstance.sendTransaction(
+                transaction
+              ),
+            action
+          );
+        });
+
+        if (!tx) {
+          this.coreInstance.handleError(
+            action,
+            `❌ Transaction failed to send.`
+          );
+          return;
+        }
+
+        const transactionHash = tx.hash || "N/A";
+
+        await this.serviceInstance.waitForTransactionConfirmation(
+          transactionHash,
+          action
+        );
+
+        Twist.log(
+          `${action}`,
+          this.coreInstance.accounts,
+          this.coreInstance,
+          `✔️  Successfully Collecting fee for possitionId ${positionId.toString()}`
+        );
+      } catch (error) {
+        this.coreInstance.handleError(
+          `Failed to Collecting fee`,
+          `${error.message}`
+        );
+
+        return null;
+      }
+    } catch (error) {
+      console.error(error);
+      this.coreInstance.handleError(
+        `Failed to collecting Fee!`,
+        `${error.message}`
+      );
+    }
+  }
+}

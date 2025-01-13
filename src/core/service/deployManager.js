@@ -1,1 +1,150 @@
-const a0_0x352f4d=a0_0x449a;(function(_0x1d8bd8,_0x11da56){const _0x3a9d3c=a0_0x449a,_0x3aa2ec=_0x1d8bd8();while(!![]){try{const _0x3013af=parseInt(_0x3a9d3c(0x1c5))/0x1+parseInt(_0x3a9d3c(0x1b9))/0x2+parseInt(_0x3a9d3c(0x1c8))/0x3+parseInt(_0x3a9d3c(0x1ae))/0x4+parseInt(_0x3a9d3c(0x1b5))/0x5+-parseInt(_0x3a9d3c(0x19d))/0x6+parseInt(_0x3a9d3c(0x1b4))/0x7*(-parseInt(_0x3a9d3c(0x1bc))/0x8);if(_0x3013af===_0x11da56)break;else _0x3aa2ec['push'](_0x3aa2ec['shift']());}catch(_0x322b71){_0x3aa2ec['push'](_0x3aa2ec['shift']());}}}(a0_0x58dc,0x1d0e2));import{fileURLToPath}from'url';import a0_0x58d283 from'path';import a0_0x371dac from'fs';import a0_0x270a34 from'solc';import{solidityCode}from'./source.js';import{ethers}from'ethers';import a0_0x1a4b3e from'../../utils/twister.js';function a0_0x449a(_0x383198,_0x582d1b){const _0x58dcc9=a0_0x58dc();return a0_0x449a=function(_0x449adf,_0x4aca6d){_0x449adf=_0x449adf-0x197;let _0x451e65=_0x58dcc9[_0x449adf];return _0x451e65;},a0_0x449a(_0x383198,_0x582d1b);}import{Helper}from'../../utils/helper.js';const __filename=fileURLToPath(import.meta[a0_0x352f4d(0x1ad)]),__dirname=a0_0x58d283[a0_0x352f4d(0x1b2)](__filename);function a0_0x58dc(){const _0x1e0982=['object','\x20successful!','evm.bytecode.object','3649tyZoPx','💨\x20Try\x20Compiling\x20contract\x20','utf8','259281ROgpBT','Solidity','Failed\x20to\x20compile\x20contract:\x20\x1b[1m','replace','❌\x20Deployment\x20failed','resolve','delay','✔️\x20\x20Compilation\x20Contract\x20','\x1b[0m\x20not\x20found\x20in\x20output.','errors','140994KVFjtC','stringify','compile','writeFileSync','saveSolidityFile','accounts','parse','✔️\x20\x20Deploying\x20Contract\x20','Compiling\x20contract...','deploy','coreInstance','waitForDeployment','walletInstance','error','bytecode','.sol\x20saved\x20at\x20','url','917560atQSgB','handleError','readFileSync','sleep','dirname','\x20:\x20','9338qbUVAP','594505SrgGyJ','contracts','abi','message','136648jbemYA','.sol','Bytecode\x20or\x20ABI\x20is\x20missing\x20from\x20the\x20compiled\x20contract','2184EBwdsR','Error\x20during\x20contract\x20compilation','ContractFactory','💨\x20Saving\x20Contract\x20','log','target'];a0_0x58dc=function(){return _0x1e0982;};return a0_0x58dc();}export default class DeployTokenManager{constructor(_0x5d53d0){const _0x31aa55=a0_0x352f4d;this[_0x31aa55(0x1a7)]=_0x5d53d0;}[a0_0x352f4d(0x1a1)]=(_0xdbc1d6,_0x17f92f)=>{const _0x30ed81=a0_0x352f4d,_0xd1d9c5=a0_0x58d283[_0x30ed81(0x198)](__dirname,_0x30ed81(0x1b6),_0xdbc1d6+'.sol');a0_0x371dac[_0x30ed81(0x1a0)](_0xd1d9c5,_0x17f92f,'utf8'),a0_0x1a4b3e[_0x30ed81(0x1c0)](_0x30ed81(0x1bf)+_0xdbc1d6+_0x30ed81(0x1ba),this['coreInstance'][_0x30ed81(0x1a2)],this[_0x30ed81(0x1a7)],'✔️\x20\x20Contract\x20'+_0xdbc1d6+_0x30ed81(0x1ac)+_0xd1d9c5);};['compileContract']=async _0x18aa75=>{const _0x2f9455=a0_0x352f4d,_0x4797b5=solidityCode(_0x18aa75);this[_0x2f9455(0x1a1)](_0x18aa75,_0x4797b5);const _0x35c12d=a0_0x58d283[_0x2f9455(0x198)](__dirname,_0x2f9455(0x1b6),_0x18aa75+'.sol'),_0x5496cd=a0_0x371dac[_0x2f9455(0x1b0)](_0x35c12d,_0x2f9455(0x1c7)),_0x221e76={'language':_0x2f9455(0x1c9),'sources':{[_0x18aa75+'.sol']:{'content':_0x5496cd}},'settings':{'outputSelection':{'*':{'*':[_0x2f9455(0x1b7),_0x2f9455(0x1c4)]}}}};await Helper[_0x2f9455(0x199)](0xbb8,this[_0x2f9455(0x1a7)]['accounts'],this[_0x2f9455(0x1a7)],_0x2f9455(0x1c6)+_0x18aa75,_0x2f9455(0x1a5));const _0x18d0f4=JSON[_0x2f9455(0x1a3)](a0_0x270a34[_0x2f9455(0x19f)](JSON[_0x2f9455(0x19e)](_0x221e76)));_0x18d0f4[_0x2f9455(0x19c)]&&(_0x18d0f4[_0x2f9455(0x19c)]['forEach'](_0x17fffd=>{const _0x479e3a=_0x2f9455;console[_0x479e3a(0x1aa)](_0x17fffd);}),this[_0x2f9455(0x1a7)][_0x2f9455(0x1af)](_0x2f9455(0x1bd),_0x18d0f4[_0x2f9455(0x19c)]));a0_0x1a4b3e[_0x2f9455(0x1c0)]('💨\x20Compiling\x20contract\x20'+_0x18aa75,this[_0x2f9455(0x1a7)]['accounts'],this[_0x2f9455(0x1a7)],_0x2f9455(0x19a)+_0x18aa75+'\x20successful!');const _0x1b8ebb=_0x18d0f4[_0x2f9455(0x1b6)][_0x18aa75+_0x2f9455(0x1ba)][_0x18aa75];return!_0x1b8ebb&&this[_0x2f9455(0x1a7)][_0x2f9455(0x1af)]('Failed\x20to\x20compile\x20\x1b[1m'+_0x18aa75+'\x1b[0m',_0x2f9455(0x1ca)+_0x18aa75+_0x2f9455(0x19b)),{'bytecode':_0x1b8ebb['evm'][_0x2f9455(0x1ab)][_0x2f9455(0x1c2)],'abi':_0x1b8ebb[_0x2f9455(0x1b7)]};};async['deployContract'](_0x3c1b93,_0x12cac9,_0x44d376){const _0x3c20ca=a0_0x352f4d,_0x18c724=_0x3c1b93[_0x3c20ca(0x1cb)](/\s+/g,'');try{const {bytecode:_0x545265,abi:_0xd4e844}=await this['compileContract'](_0x18c724);(!_0x545265||!_0xd4e844)&&this['coreInstance']['handleError'](_0x3c20ca(0x197),_0x3c20ca(0x1bb));const _0xe28904=new ethers[(_0x3c20ca(0x1be))](_0xd4e844,_0x545265,this['coreInstance'][_0x3c20ca(0x1a9)]),_0x31ca15=await _0xe28904[_0x3c20ca(0x1a6)](0x12,_0x3c1b93,_0x12cac9,_0x44d376,{'gasLimit':0x2dc6c0});return await _0x31ca15['deploymentTransaction'](),await _0x31ca15[_0x3c20ca(0x1a8)](),a0_0x1a4b3e['log']('💨\x20Deploying\x20contract\x20'+_0x18c724,this[_0x3c20ca(0x1a7)][_0x3c20ca(0x1a2)],this[_0x3c20ca(0x1a7)],_0x3c20ca(0x1a4)+_0x18c724+_0x3c20ca(0x1b3)+_0x31ca15[_0x3c20ca(0x1c1)]+_0x3c20ca(0x1c3)),_0x31ca15[_0x3c20ca(0x1c1)];}catch(_0x5a842f){return console['log'](_0x5a842f),this[_0x3c20ca(0x1a7)]['handleError']('❌\x20Deployment\x20failed',_0x5a842f[_0x3c20ca(0x1b8)]),null;}}[a0_0x352f4d(0x1b1)](_0x5025eb){return new Promise(_0x376f5e=>setTimeout(_0x376f5e,_0x5025eb));}}
+import { fileURLToPath } from "url";
+import path from "path";
+import fs from "fs";
+import solc from "solc";
+import { solidityCode } from "./source.js";
+import { ethers } from "ethers";
+import Twist from "../../utils/twister.js";
+import { Helper } from "../../utils/helper.js";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+export default class DeployTokenManager {
+  constructor(core) {
+    this.coreInstance = core;
+  }
+
+  saveSolidityFile = (contractName, code) => {
+    const filePath = path.resolve(
+      __dirname,
+      "contracts",
+      `${contractName}.sol`
+    );
+    fs.writeFileSync(filePath, code, "utf8");
+    Twist.log(
+      `💨 Saving Contract ${contractName}.sol`,
+      this.coreInstance.accounts,
+      this.coreInstance,
+      `✔️  Contract ${contractName}.sol saved at ${filePath}`
+    );
+  };
+
+  compileContract = async (contractName) => {
+    const sourceCode = solidityCode(contractName);
+
+    this.saveSolidityFile(contractName, sourceCode);
+
+    const contractPath = path.resolve(
+      __dirname,
+      "contracts",
+      `${contractName}.sol`
+    );
+    const source = fs.readFileSync(contractPath, "utf8");
+    const input = {
+      language: "Solidity",
+      sources: {
+        [`${contractName}.sol`]: {
+          content: source,
+        },
+      },
+      settings: {
+        outputSelection: {
+          "*": {
+            "*": ["abi", "evm.bytecode.object"],
+          },
+        },
+      },
+    };
+    await Helper.delay(
+      3000,
+      this.coreInstance.accounts,
+      this.coreInstance,
+      `💨 Try Compiling contract ${contractName}`,
+      `Compiling contract...`
+    );
+
+    const output = JSON.parse(solc.compile(JSON.stringify(input)));
+
+    if (output.errors) {
+      output.errors.forEach((err) => {
+        console.error(err);
+      });
+      this.coreInstance.handleError(
+        "Error during contract compilation",
+        output.errors
+      );
+    }
+    Twist.log(
+      `💨 Compiling contract ${contractName}`,
+      this.coreInstance.accounts,
+      this.coreInstance,
+      `✔️  Compilation Contract ${contractName} successful!`
+    );
+
+    const compiledContract =
+      output.contracts[`${contractName}.sol`][contractName];
+
+    if (!compiledContract) {
+      this.coreInstance.handleError(
+        `Failed to compile \x1b[1m${contractName}\x1b[0m`,
+        `Failed to compile contract: \x1b[1m${contractName}\x1b[0m not found in output.`
+      );
+    }
+
+    return {
+      bytecode: compiledContract.evm.bytecode.object,
+      abi: compiledContract.abi,
+    };
+  };
+
+  async deployContract(name, symbol, supply) {
+    const contractName = name.replace(/\s+/g, "");
+    try {
+      const { bytecode, abi } = await this.compileContract(contractName);
+
+      if (!bytecode || !abi) {
+        this.coreInstance.handleError(
+          "❌ Deployment failed",
+          "Bytecode or ABI is missing from the compiled contract"
+        );
+      }
+
+      const factory = new ethers.ContractFactory(
+        abi,
+        bytecode,
+        this.coreInstance.walletInstance
+      );
+
+      const action = `🔨 Start to deploy contract \x1b[1m${name} (${symbol})\x1b[0m`;
+      Twist.log(
+        action,
+        this.coreInstance.accounts,
+        this.coreInstance,
+        "Deploying..."
+      );
+      const contract = await factory.deploy(18, name, symbol, supply, {
+        gasLimit: this.coreInstance.FIXED_GAS_LIMIT,
+        gasPrice: this.coreInstance.FIXED_GAS_PRICE,
+      });
+
+      await contract.deploymentTransaction();
+      await contract.waitForDeployment();
+      Twist.log(
+        `💨 Deploying contract ${contractName}`,
+        this.coreInstance.accounts,
+        this.coreInstance,
+        `✔️  Deploying Contract ${contractName} : ${contract.target} successful!`
+      );
+      return contract.target;
+    } catch (error) {
+      console.log(error);
+      this.coreInstance.handleError(`❌ Deployment failed`, error.message);
+      return null;
+    }
+  }
+
+  sleep(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  }
+}

@@ -1,1 +1,144 @@
-const a0_0x43b39e=a0_0x4d7d;(function(_0x3df31c,_0x1c210c){const _0x44e2cb=a0_0x4d7d,_0xad5aee=_0x3df31c();while(!![]){try{const _0x5991c7=parseInt(_0x44e2cb(0x120))/0x1*(-parseInt(_0x44e2cb(0x135))/0x2)+parseInt(_0x44e2cb(0x10d))/0x3+-parseInt(_0x44e2cb(0x144))/0x4*(-parseInt(_0x44e2cb(0x13c))/0x5)+parseInt(_0x44e2cb(0x117))/0x6+-parseInt(_0x44e2cb(0x12f))/0x7*(parseInt(_0x44e2cb(0x122))/0x8)+parseInt(_0x44e2cb(0x119))/0x9+-parseInt(_0x44e2cb(0x12c))/0xa*(parseInt(_0x44e2cb(0x111))/0xb);if(_0x5991c7===_0x1c210c)break;else _0xad5aee['push'](_0xad5aee['shift']());}catch(_0x10a1d3){_0xad5aee['push'](_0xad5aee['shift']());}}}(a0_0xe522,0x791d8));import{ethers}from'ethers';import a0_0x1aa5e7 from'../../utils/twister.js';function a0_0x4d7d(_0x1578e6,_0x1f6538){const _0xe5222b=a0_0xe522();return a0_0x4d7d=function(_0x4d7d19,_0x3509ac){_0x4d7d19=_0x4d7d19-0x10a;let _0x7e1431=_0xe5222b[_0x4d7d19];return _0x7e1431;},a0_0x4d7d(_0x1578e6,_0x1f6538);}import{ERC20_ABI}from'../../abi/abi.js';import a0_0x5c1a69 from'../../../setup.js';export default class TokenManager{constructor(_0x372935,_0x12c61b){const _0x5a0e97=a0_0x4d7d;this['coreInstance']=_0x372935,this[_0x5a0e97(0x11b)]=_0x12c61b;}async[a0_0x43b39e(0x10a)](_0x2292fa,_0x1ecbb0,_0x55ba80){const _0x4d8ae8=a0_0x43b39e,_0x4e5b34=new ethers[(_0x4d8ae8(0x12a))](_0x2292fa,ERC20_ABI,this[_0x4d8ae8(0x10b)][_0x4d8ae8(0x118)]);return await _0x4e5b34[_0x4d8ae8(0x10e)](_0x55ba80,_0x1ecbb0);}async[a0_0x43b39e(0x113)](_0x588c83,_0x39a094){const _0x51b45c=a0_0x43b39e;try{const _0x20da98=new ethers[(_0x51b45c(0x12a))](_0x588c83,ERC20_ABI,this['coreInstance']['walletInstance']),_0x1e1cef=await _0x20da98['symbol'](),_0x401efe=_0x51b45c(0x11d)+_0x1e1cef+_0x51b45c(0x115)+_0x39a094,_0x11d6cf=_0x20da98[_0x51b45c(0x116)][_0x51b45c(0x112)](_0x51b45c(0x11f),[_0x39a094,ethers[_0x51b45c(0x11e)][_0x51b45c(0x127)]()]),_0x35dd3f={'to':_0x588c83,'from':this[_0x51b45c(0x10b)][_0x51b45c(0x13a)],'value':0x0,'data':_0x11d6cf,'gasLimit':this[_0x51b45c(0x10b)][_0x51b45c(0x137)],'gasPrice':this[_0x51b45c(0x10b)][_0x51b45c(0x10f)],'nonce':await this[_0x51b45c(0x10b)]['provider'][_0x51b45c(0x12d)](this[_0x51b45c(0x10b)][_0x51b45c(0x13a)])};try{const _0x53e7c7=await this[_0x51b45c(0x11b)][_0x51b45c(0x139)](async()=>{const _0x2f425b=_0x51b45c;return await this['serviceManager'][_0x2f425b(0x13b)](async()=>await this[_0x2f425b(0x10b)][_0x2f425b(0x118)][_0x2f425b(0x110)](_0x35dd3f),_0x401efe);});if(!_0x53e7c7){this[_0x51b45c(0x10b)][_0x51b45c(0x121)](_0x401efe,_0x51b45c(0x142)),this['coreInstance'][_0x51b45c(0x129)]++;return;}const _0x30939b=_0x53e7c7['hash']||'N/A';await this[_0x51b45c(0x11b)][_0x51b45c(0x125)](_0x30939b,_0x401efe),a0_0x1aa5e7[_0x51b45c(0x132)](''+_0x401efe,this['coreInstance'][_0x51b45c(0x133)],this[_0x51b45c(0x10b)],_0x51b45c(0x130)+_0x401efe+_0x51b45c(0x13d));}catch(_0x1d9a4b){console[_0x51b45c(0x11a)](_0x1d9a4b),this[_0x51b45c(0x10b)][_0x51b45c(0x121)]('❌\x20'+_0x401efe+_0x51b45c(0x10c),_0x1d9a4b[_0x51b45c(0x143)]);}}catch(_0x59d655){console[_0x51b45c(0x11a)](_0x59d655),this[_0x51b45c(0x10b)][_0x51b45c(0x121)](_0x51b45c(0x12b),_0x59d655['message']);}}async[a0_0x43b39e(0x138)](_0x1b8832,_0x485168=![]){const _0x5d8889=a0_0x43b39e;try{const _0x573da6=_0x485168===_0x5d8889(0x138),_0x1d98e5=_0x573da6?'deposit':_0x5d8889(0x140),_0x3c9605=this[_0x5d8889(0x10b)][_0x5d8889(0x11c)][_0x5d8889(0x124)][_0x5d8889(0x116)][_0x5d8889(0x112)](_0x1d98e5,_0x573da6?[]:[_0x1b8832[_0x5d8889(0x127)]()]),_0x146012={'to':a0_0x5c1a69['constant'][_0x5d8889(0x141)],'from':this['coreInstance'][_0x5d8889(0x13a)],'value':_0x573da6?ethers[_0x5d8889(0x134)](_0x1b8832):0x0,'data':_0x3c9605,'gasLimit':this[_0x5d8889(0x10b)][_0x5d8889(0x137)],'gasPrice':this[_0x5d8889(0x10b)][_0x5d8889(0x10f)],'nonce':await this[_0x5d8889(0x10b)]['provider'][_0x5d8889(0x12d)](this[_0x5d8889(0x10b)][_0x5d8889(0x13a)])},_0x42035d=_0x573da6?_0x5d8889(0x145)+Number(_0x1b8832)[_0x5d8889(0x123)](0x8)+'\x20CTC\x20into\x20WCTC':'🔄\x20Unwrapping\x20'+Number(ethers[_0x5d8889(0x12e)](_0x1b8832,0x12))[_0x5d8889(0x123)](0x8)+_0x5d8889(0x13e),_0x1d6efb=await this[_0x5d8889(0x11b)][_0x5d8889(0x139)](()=>this[_0x5d8889(0x11b)]['handleTransaction'](()=>this['coreInstance'][_0x5d8889(0x118)][_0x5d8889(0x110)](_0x146012),_0x42035d));if(!_0x1d6efb){this[_0x5d8889(0x10b)][_0x5d8889(0x121)](_0x42035d,_0x5d8889(0x136));return;}await this[_0x5d8889(0x11b)]['waitForTransactionConfirmation'](_0x1d6efb[_0x5d8889(0x126)],_0x42035d),a0_0x1aa5e7[_0x5d8889(0x132)](''+_0x42035d,this[_0x5d8889(0x10b)]['accounts'],this[_0x5d8889(0x10b)],_0x573da6?_0x5d8889(0x114)+Number(_0x1b8832)[_0x5d8889(0x123)](0x8)+_0x5d8889(0x131):'✔️\x20\x20Unwrapping\x20'+Number(ethers[_0x5d8889(0x12e)](_0x1b8832,0x12))['toFixed'](0x8)+_0x5d8889(0x13f));}catch(_0x19a207){this['coreInstance']['handleError'](_0x5d8889(0x128),''+_0x19a207[_0x5d8889(0x143)]);}}}function a0_0xe522(){const _0x408457=['sendTransaction','11fYDALn','encodeFunctionData','approveToken','✔️\x20\x20Wrapping\x20','\x20Into\x20','interface','4937244mPepqd','walletInstance','6503202kHWYzD','error','serviceManager','contracts','Approving\x20','MaxUint256','approve','523UUHbQA','handleError','24tJHWKL','toFixed','WCTC','waitForTransactionConfirmation','hash','toString','Failed\x20to\x20wrap\x20CTC','swapCount','Contract','❌\x20Approving\x20token\x20failed','12514010ltesBk','getTransactionCount','formatUnits','563584FupoWR','✔️\x20\x20','\x20CTC\x20to\x20WCTC\x20success','log','accounts','parseEther','3548yzSmqf','❌\x20Transaction\x20failed\x20to\x20send.','FIXED_GAS_LIMIT','wrap','retryTransaction','address','handleTransaction','110IzewRK','\x20success','\x20WCTC\x20into\x20CTC','\x20WCTC\x20to\x20CTC\x20success','withdraw','WCTC_ADDRESS','Transaction\x20failed\x20to\x20send.','message','111164eLLUHI','🔄\x20Wrapping\x20','checkAllowance','coreInstance','\x20failed','2279919QqOIJK','allowance','FIXED_GAS_PRICE'];a0_0xe522=function(){return _0x408457;};return a0_0xe522();}
+import { ethers } from "ethers";
+
+import Twist from "../../utils/twister.js";
+import { ERC20_ABI } from "../../abi/abi.js";
+import setup from "../../../setup.js";
+
+export default class TokenManager {
+  constructor(core, serviceManagerInstance) {
+    this.coreInstance = core;
+    this.serviceManager = serviceManagerInstance;
+  }
+
+  async checkAllowance(tokenAddress, spender, owner) {
+    const smartContract = new ethers.Contract(
+      tokenAddress,
+      ERC20_ABI,
+      this.coreInstance.walletInstance
+    );
+    return await smartContract.allowance(owner, spender);
+  }
+
+  async approveToken(token0, spender) {
+    try {
+      const smartContract = new ethers.Contract(
+        token0,
+        ERC20_ABI,
+        this.coreInstance.walletInstance
+      );
+
+      const tokenName = await smartContract.symbol();
+      const actions = `Approving ${tokenName} Into ${spender}`;
+
+      const data = smartContract.interface.encodeFunctionData("approve", [
+        spender,
+        ethers.MaxUint256.toString(),
+      ]);
+
+      const transaction = {
+        to: token0,
+        from: this.coreInstance.address,
+        value: 0,
+        data: data,
+        gasLimit: this.coreInstance.FIXED_GAS_LIMIT,
+        gasPrice: this.coreInstance.FIXED_GAS_PRICE,
+        nonce: await this.coreInstance.provider.getTransactionCount(
+          this.coreInstance.address
+        ),
+      };
+
+      try {
+        const tx = await this.serviceManager.retryTransaction(async () => {
+          return await this.serviceManager.handleTransaction(
+            async () =>
+              await this.coreInstance.walletInstance.sendTransaction(
+                transaction
+              ),
+            actions
+          );
+        });
+
+        if (!tx) {
+          this.coreInstance.handleError(actions, `Transaction failed to send.`);
+          this.coreInstance.swapCount++;
+          return;
+        }
+
+        const transactionHash = tx.hash || "N/A";
+        await this.serviceManager.waitForTransactionConfirmation(
+          transactionHash,
+          actions
+        );
+
+        Twist.log(
+          `${actions}`,
+          this.coreInstance.accounts,
+          this.coreInstance,
+          `✔️  ${actions} success`
+        );
+      } catch (error) {
+        console.error(error);
+        this.coreInstance.handleError(`❌ ${actions} failed`, error.message);
+      }
+    } catch (error) {
+      console.error(error);
+      this.coreInstance.handleError("❌ Approving token failed", error.message);
+    }
+  }
+
+  async wrap(amountIn, actionType = false) {
+    try {
+      const isWrap = actionType === "wrap";
+      const methodName = isWrap ? "deposit" : "withdraw";
+      const encode =
+        this.coreInstance.contracts.WCTC.interface.encodeFunctionData(
+          methodName,
+          isWrap ? [] : [amountIn.toString()]
+        );
+
+      const transaction = {
+        to: setup.constant.WCTC_ADDRESS,
+        from: this.coreInstance.address,
+        value: isWrap ? ethers.parseEther(amountIn) : 0,
+        data: encode,
+        gasLimit: this.coreInstance.FIXED_GAS_LIMIT,
+        gasPrice: this.coreInstance.FIXED_GAS_PRICE,
+        nonce: await this.coreInstance.provider.getTransactionCount(
+          this.coreInstance.address
+        ),
+      };
+
+      const action = isWrap
+        ? `🔄 Wrapping ${Number(amountIn).toFixed(8)} CTC into WCTC`
+        : `🔄 Unwrapping ${Number(ethers.formatUnits(amountIn, 18)).toFixed(
+            8
+          )} WCTC into CTC`;
+
+      const tx = await this.serviceManager.retryTransaction(() =>
+        this.serviceManager.handleTransaction(
+          () => this.coreInstance.walletInstance.sendTransaction(transaction),
+          action
+        )
+      );
+
+      if (!tx) {
+        this.coreInstance.handleError(action, `❌ Transaction failed to send.`);
+        return;
+      }
+      await this.serviceManager.waitForTransactionConfirmation(tx.hash, action);
+
+      Twist.log(
+        `${action}`,
+        this.coreInstance.accounts,
+        this.coreInstance,
+        isWrap
+          ? `✔️  Wrapping ${Number(amountIn).toFixed(8)} CTC to WCTC success`
+          : `✔️  Unwrapping ${Number(ethers.formatUnits(amountIn, 18)).toFixed(
+              8
+            )} WCTC to CTC success`
+      );
+    } catch (error) {
+      this.coreInstance.handleError(`Failed to wrap CTC`, `${error.message}`);
+    }
+  }
+}

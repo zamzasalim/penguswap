@@ -1,1 +1,194 @@
-const a0_0x51f9b6=a0_0x121a;function a0_0x121a(_0x3b215a,_0x568a22){const _0x32d77f=a0_0x32d7();return a0_0x121a=function(_0x121a19,_0x49efbc){_0x121a19=_0x121a19-0x123;let _0x3de865=_0x32d77f[_0x121a19];return _0x3de865;},a0_0x121a(_0x3b215a,_0x568a22);}(function(_0x410655,_0x36d212){const _0x4909a7=a0_0x121a,_0x12c8b4=_0x410655();while(!![]){try{const _0x1c4afd=parseInt(_0x4909a7(0x145))/0x1+parseInt(_0x4909a7(0x153))/0x2+parseInt(_0x4909a7(0x134))/0x3+parseInt(_0x4909a7(0x151))/0x4*(parseInt(_0x4909a7(0x14c))/0x5)+-parseInt(_0x4909a7(0x142))/0x6*(parseInt(_0x4909a7(0x130))/0x7)+-parseInt(_0x4909a7(0x152))/0x8*(-parseInt(_0x4909a7(0x12e))/0x9)+-parseInt(_0x4909a7(0x123))/0xa;if(_0x1c4afd===_0x36d212)break;else _0x12c8b4['push'](_0x12c8b4['shift']());}catch(_0x50cf7d){_0x12c8b4['push'](_0x12c8b4['shift']());}}}(a0_0x32d7,0xa2bc8));import a0_0x22b3ef from'../../utils/twister.js';import{Helper}from'../../utils/helper.js';function a0_0x32d7(){const _0x334666=['split','19936760dkUYpg','coreInstance','args','code','delay','swapRouter','Previous\x20attempt\x20failed:\x20','waitForTransaction','N/A','Swapping\x20','logs','11266263kWEZLT','Error\x20during\x20transaction:\x20','9160123AuJgAG','\x20confirmed.','getTransactionError','Transaction\x20failed:\x20','684579TbqawC','\x20into\x20','parseLog','✔️\x20\x20Transaction\x20sent,\x20txid:\x20','startLoadingSpinner','Max\x20attempts\x20reached.','Unknown\x20error.','contractInstances','write','ECONNRESET','stdout','formatTxHash','handleError','getTransactionReceipt','6pZmVOP','floor','error','1272599cuKlqS','sleep','hash','\x20|\x20Reason:\x20','substring','waitForTransactionConfirmation','\x0d\x1b[K','13765wbNIpQ','Error\x20fetching\x20transaction\x20receipt.','padStart','reverse','handleTransactionError','1424gWsDos','8JRcvQZ','472332upGIrB','✔️\x20\x20Transaction\x20','message','log','formatElapsedTime','Hash:\x20','min','test','join','handleTransaction','status','Error\x20fetching\x20transaction\x20receipt:','Retrying...\x20Attempt\x20','retryTransaction','interface'];a0_0x32d7=function(){return _0x334666;};return a0_0x32d7();}export default class ServiceManager{constructor(_0xf1ccbe){const _0x442fa4=a0_0x121a;this[_0x442fa4(0x124)]=_0xf1ccbe;}async['sleep'](_0x1714cf){return new Promise(_0x5f5b79=>setTimeout(_0x5f5b79,_0x1714cf));}['formatElapsedTime'](_0x13ccbf){const _0x8ac380=a0_0x121a,_0x5ed622=Math['floor'](_0x13ccbf/0xe10),_0x5e8f71=Math[_0x8ac380(0x143)](_0x13ccbf%0xe10/0x3c),_0x33b75e=_0x13ccbf%0x3c;return String(_0x5ed622)[_0x8ac380(0x14e)](0x2,'0')+':'+String(_0x5e8f71)['padStart'](0x2,'0')+':'+String(_0x33b75e)[_0x8ac380(0x14e)](0x2,'0');}[a0_0x51f9b6(0x13f)](_0x149df8){const _0xef89d2=a0_0x51f9b6;return _0x149df8[_0xef89d2(0x149)](0x0,0xc)+'...'+_0x149df8['slice'](-0xc)[_0xef89d2(0x162)]('')[_0xef89d2(0x14f)]()[_0xef89d2(0x15b)]('');}async[a0_0x51f9b6(0x150)](_0x10888b,_0x5f5d73,_0x3a4bfd,_0x5d9c1a){const _0x2a9234=a0_0x51f9b6,_0x1eba41=_0x10888b['message']||'An\x20unexpected\x20error\x20occurred.',_0x349cb2=_0x10888b['transactionHash']||_0x2a9234(0x12b),_0x1b71c8=_0x349cb2!=='N/A'?await this[_0x2a9234(0x132)](_0x349cb2):'Invalid\x20transaction\x20hash.',_0x461cb9=_0x1eba41+'\x20|\x20Transaction\x20Hash:\x20'+this['formatTxHash'](_0x349cb2)+_0x2a9234(0x148)+_0x1b71c8;this[_0x2a9234(0x124)][_0x2a9234(0x140)](_0x2a9234(0x12c)+_0x5f5d73+'\x20'+_0x3a4bfd+_0x2a9234(0x135)+_0x5d9c1a,_0x461cb9),await this[_0x2a9234(0x146)](0x1388),this[_0x2a9234(0x124)][_0x2a9234(0x140)]('Transaction\x20failed\x20with\x20error:\x20'+_0x1eba41,_0x2a9234(0x158)+this[_0x2a9234(0x13f)](_0x349cb2)+'\x20|\x20Reason:\x20'+_0x1b71c8);}async['getTransactionError'](_0x2bd1c1){const _0x1a92ec=a0_0x51f9b6;try{const _0x18b5a6=await this[_0x1a92ec(0x124)]['provider'][_0x1a92ec(0x141)](_0x2bd1c1);if(_0x18b5a6?.[_0x1a92ec(0x12d)])for(const _0x300f8f of _0x18b5a6[_0x1a92ec(0x12d)]){try{const _0x4b2100=this[_0x1a92ec(0x124)][_0x1a92ec(0x13b)][_0x1a92ec(0x128)][_0x1a92ec(0x161)][_0x1a92ec(0x136)](_0x300f8f);if(_0x4b2100)return _0x4b2100[_0x1a92ec(0x125)][0x0];}catch{continue;}}return _0x1a92ec(0x13a);}catch(_0x347445){return this[_0x1a92ec(0x124)][_0x1a92ec(0x140)](_0x1a92ec(0x15e),_0x347445),_0x1a92ec(0x14d);}}async[a0_0x51f9b6(0x14a)](_0x4d7fc4,_0x3d2b5a){const _0x7db080=a0_0x51f9b6;if(!_0x4d7fc4||!/^0x[a-fA-F0-9]{64}$/[_0x7db080(0x15a)](_0x4d7fc4))return this[_0x7db080(0x124)]['handleError'](_0x3d2b5a,'Invalid\x20transaction\x20hash.'),null;const _0x57c66=this[_0x7db080(0x138)](Helper['animation'],_0x3d2b5a,'Waiting\x20for\x20transaction\x20confirmation...');try{const _0x555e0c=await this[_0x7db080(0x124)]['provider'][_0x7db080(0x12a)](_0x4d7fc4);clearInterval(_0x57c66),process['stdout'][_0x7db080(0x13c)]('\x0d\x1b[K');if(_0x555e0c[_0x7db080(0x15d)]===0x0){const _0x3f4136=await this[_0x7db080(0x132)](_0x4d7fc4);return this['coreInstance'][_0x7db080(0x140)](_0x3d2b5a,_0x7db080(0x133)+(_0x3f4136||_0x7db080(0x13a))),null;}return a0_0x22b3ef[_0x7db080(0x156)](_0x3d2b5a,this[_0x7db080(0x124)]['accounts'],this[_0x7db080(0x124)],_0x7db080(0x154)+this[_0x7db080(0x13f)](_0x4d7fc4)+_0x7db080(0x131)),await this['sleep'](0x7d0),_0x555e0c;}catch(_0x499b11){return console[_0x7db080(0x144)](_0x499b11),clearInterval(_0x57c66),process[_0x7db080(0x13e)][_0x7db080(0x13c)](_0x7db080(0x14b)),this['coreInstance'][_0x7db080(0x140)](_0x3d2b5a,_0x499b11),null;}}async[a0_0x51f9b6(0x15c)](_0x58fbb6,_0x1e73f2){const _0x4d8054=a0_0x51f9b6;try{const _0x43db26=await _0x58fbb6();return _0x43db26?.[_0x4d8054(0x147)]?(a0_0x22b3ef[_0x4d8054(0x156)](_0x1e73f2,this[_0x4d8054(0x124)]['accounts'],this[_0x4d8054(0x124)],_0x4d8054(0x137)+this[_0x4d8054(0x13f)](_0x43db26['hash'])),_0x43db26):(console[_0x4d8054(0x144)](error),this[_0x4d8054(0x124)][_0x4d8054(0x140)](_0x1e73f2,'Transaction\x20failed\x20to\x20send.'),null);}catch(_0x3bdce3){return console[_0x4d8054(0x144)](_0x3bdce3),this[_0x4d8054(0x124)]['handleError'](_0x1e73f2,_0x4d8054(0x12f)+_0x3bdce3[_0x4d8054(0x155)]),null;}}async[a0_0x51f9b6(0x160)](_0xa37196,_0x31f36f=0x3){const _0xe3e0a0=a0_0x51f9b6;for(let _0x2bc0fa=0x1;_0x2bc0fa<=_0x31f36f;_0x2bc0fa++){try{return await _0xa37196();}catch(_0x5299a0){console[_0xe3e0a0(0x144)](_0x5299a0);if(_0x5299a0[_0xe3e0a0(0x126)]===_0xe3e0a0(0x13d)&&_0x2bc0fa<_0x31f36f){const _0x4f65f1=Math[_0xe3e0a0(0x159)](0x3e8*Math['pow'](0x2,_0x2bc0fa),0x2710);await Helper[_0xe3e0a0(0x127)](_0x4f65f1,this['coreInstance']['accounts'],this[_0xe3e0a0(0x124)],_0xe3e0a0(0x15f)+(_0x2bc0fa+0x1)+'/'+_0x31f36f,_0xe3e0a0(0x129)+_0x5299a0[_0xe3e0a0(0x155)]);}else return this[_0xe3e0a0(0x124)][_0xe3e0a0(0x140)]('Transaction\x20Retry\x20Failed',_0xe3e0a0(0x139)),null;}}}[a0_0x51f9b6(0x138)](_0x8dbb92,_0x4d32ea,_0x3aa94a){let _0x1a6ac0=0x0;return setInterval(()=>{const _0x420a6c=a0_0x121a,_0xf878b1=this[_0x420a6c(0x157)](_0x1a6ac0);a0_0x22b3ef[_0x420a6c(0x156)](_0x4d32ea,this[_0x420a6c(0x124)]['accounts'],this[_0x420a6c(0x124)],_0x8dbb92[_0x1a6ac0%_0x8dbb92['length']]+'\x20'+_0xf878b1+'\x20'+_0x3aa94a),_0x1a6ac0++;},0x3e8);}}
+import Twist from "../../utils/twister.js";
+import { Helper } from "../../utils/helper.js";
+
+export default class ServiceManager {
+  constructor(core) {
+    this.coreInstance = core;
+  }
+
+  async sleep(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  }
+
+  formatElapsedTime(elapsedTime) {
+    const hours = Math.floor(elapsedTime / 3600);
+    const minutes = Math.floor((elapsedTime % 3600) / 60);
+    const seconds = elapsedTime % 60;
+    return `${String(hours).padStart(2, "0")}:${String(minutes).padStart(
+      2,
+      "0"
+    )}:${String(seconds).padStart(2, "0")}`;
+  }
+
+  formatTxHash(txHash) {
+    return `${txHash.substring(0, 12)}...${txHash
+      .slice(-12)
+      .split("")
+      .reverse()
+      .join("")}`;
+  }
+
+  async handleTransactionError(error, amount, fromToken, toToken) {
+    const errorMessage = error.message || "An unexpected error occurred.";
+    const transactionHash = error.transactionHash || "N/A";
+    const reason =
+      transactionHash !== "N/A"
+        ? await this.getTransactionError(transactionHash)
+        : "Invalid transaction hash.";
+
+    const formattedError = `${errorMessage} | Transaction Hash: ${this.formatTxHash(
+      transactionHash
+    )} | Reason: ${reason}`;
+    this.coreInstance.handleError(
+      `Swapping ${amount} ${fromToken} into ${toToken}`,
+      formattedError
+    );
+
+    await this.sleep(5000);
+    this.coreInstance.handleError(
+      `Transaction failed with error: ${errorMessage}`,
+      `Hash: ${this.formatTxHash(transactionHash)} | Reason: ${reason}`
+    );
+  }
+
+  async getTransactionError(txHash) {
+    try {
+      const receipt = await this.coreInstance.provider.getTransactionReceipt(
+        txHash
+      );
+      if (receipt?.logs) {
+        for (const log of receipt.logs) {
+          try {
+            const errorEvent =
+              this.coreInstance.contractInstances.swapRouter.interface.parseLog(
+                log
+              );
+            if (errorEvent) return errorEvent.args[0];
+          } catch {
+            continue;
+          }
+        }
+      }
+      return "Unknown error.";
+    } catch (error) {
+      this.coreInstance.handleError(
+        "Error fetching transaction receipt:",
+        error
+      );
+      return "Error fetching transaction receipt.";
+    }
+  }
+
+  async waitForTransactionConfirmation(txHash, action) {
+    if (!txHash || !/^0x[a-fA-F0-9]{64}$/.test(txHash)) {
+      this.coreInstance.handleError(action, "Invalid transaction hash.");
+      return null;
+    }
+
+    const loading = this.startLoadingSpinner(
+      Helper.animation,
+      action,
+      "Waiting for transaction confirmation..."
+    );
+
+    try {
+      const receipt = await this.coreInstance.provider.waitForTransaction(
+        txHash
+      );
+      clearInterval(loading);
+      process.stdout.write("\r\x1b[K");
+
+      if (receipt.status === 0) {
+        const reason = await this.getTransactionError(txHash);
+        this.coreInstance.handleError(
+          action,
+          `Transaction failed: ${reason || "Unknown error."}`
+        );
+        return null;
+      }
+
+      Twist.log(
+        action,
+        this.coreInstance.accounts,
+        this.coreInstance,
+        `✔️  Transaction ${this.formatTxHash(txHash)} confirmed.`
+      );
+      await this.sleep(2000);
+      return receipt;
+    } catch (error) {
+      console.error(error);
+      clearInterval(loading);
+      process.stdout.write("\r\x1b[K");
+      this.coreInstance.handleError(action, error);
+      return null;
+    }
+  }
+
+  async handleTransaction(fn, action) {
+    try {
+      const tx = await fn();
+      if (tx?.hash) {
+        Twist.log(
+          action,
+          this.coreInstance.accounts,
+          this.coreInstance,
+          `✔️  Transaction sent, txid: ${this.formatTxHash(tx.hash)}`
+        );
+        return tx;
+      } else {
+        console.error(error);
+        this.coreInstance.handleError(action, "Transaction failed to send.");
+        return null;
+      }
+    } catch (error) {
+      console.error(error);
+      this.coreInstance.handleError(
+        action,
+        `Error during transaction: ${error.message}`
+      );
+      return null;
+    }
+  }
+
+  async retryTransaction(fn, maxAttempts = 3) {
+    for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+      try {
+        return await fn();
+      } catch (error) {
+        console.error(error);
+        if (error.code === "ECONNRESET" && attempt < maxAttempts) {
+          const backoffDelay = Math.min(1000 * Math.pow(2, attempt), 10000);
+          await Helper.delay(
+            backoffDelay,
+            this.coreInstance.accounts,
+            this.coreInstance,
+            `Retrying... Attempt ${attempt + 1}/${maxAttempts}`,
+            `Previous attempt failed: ${error.message}`
+          );
+        } else {
+          this.coreInstance.handleError(
+            "Transaction Retry Failed",
+            "Max attempts reached."
+          );
+          return null;
+        }
+      }
+    }
+  }
+
+  startLoadingSpinner(spinnerChars, action, message) {
+    let elapsedTime = 0;
+    return setInterval(() => {
+      const timeString = this.formatElapsedTime(elapsedTime);
+      Twist.log(
+        action,
+        this.coreInstance.accounts,
+        this.coreInstance,
+        `${
+          spinnerChars[elapsedTime % spinnerChars.length]
+        } ${timeString} ${message}`
+      );
+      elapsedTime++;
+    }, 1000);
+  }
+}

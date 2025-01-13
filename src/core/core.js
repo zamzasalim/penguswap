@@ -1,1 +1,400 @@
-function a0_0x4407(){const _0x2eb794=['deployToken','10dYbpmS','WCTC','token','WCTC_ADDRESS','❌\x20Error:\x20','swapToken','Failed\x20fetching\x20balance','✔️\x20\x20Already\x20approved!','parseUnits','getPositions','CONTRACT_ADDRESS','\x20Into\x20','processWCTC','deployPool','Collecting\x20fee\x20for\x20positionId\x20','Preparing\x20to\x20deploy','getBalance','wrap','Contract','gasLimit','reduce','POSITION_MANAGER_ADDRESS','Error\x20during\x20process\x20execution:','Error\x20fetching\x20positions:','MaxUint256','Wallet','url','465182UXHKUe','Preparing\x20to\x20','name','FIXED_GAS_PRICE','gwei','supply','USDC_ADDRESS','addLiquidity','deployContract','log','Preparing\x20to\x20swap\x20','✔️\x20\x20Contract\x20deployed\x20successfully\x20at\x20\x1b[1m','JsonRpcProvider','decimals','460889nBRKhb','tokenManager','checkAllowance','runProcess','814818sLcEni','sleep','approveToken','encodePriceSqrt','6rhkEGt','\x20CTC\x20into\x20WCTC','deployTokenManager','🔨\x20\x20','Unwrapping\x20','8803816LMqUGM','gasPrice','symbol','initializeContracts','toFixed','accounts','address','ZERO_ADDRESS','provider','🔄\x20','processApprove','delay','No\x20approval\x20needed\x20for\x20\x1b[1m','\x1b[0m\x20Into\x20\x1b[1m','exit','Adding\x20100\x20','Swaping\x20\x1b[1m','message','positions','POSITION_MANAGER','2933518OzgsUZ','swapManager','contracts','❌\x20No\x20fees\x20to\x20collect\x20for\x20positionId\x20','walletInstance','balanceOf','Preparing\x20to\x20approve\x20\x1b[1m','525524GDOBCT','showSkelLogo','tokenOfOwnerByIndex','performSwap','\x1b[0m','addLiquidityManager','serviceManager','toString','handleError','\x1b[0m\x20token.','❌\x20Failed\x20to\x20','25903179vAKuQc',')\x1b[0m','getAddress','Accounts\x20are\x20required','validateAddress','all','✔️\x20\x20All\x20process\x20has\x20been\x20completed.','fetchTokenDetails','🔨\x20Deploying\x20contract\x20\x1b[1m'];a0_0x4407=function(){return _0x2eb794;};return a0_0x4407();}const a0_0x133821=a0_0x4eee;(function(_0x1cb911,_0x20cc6d){const _0x51a848=a0_0x4eee,_0x125856=_0x1cb911();while(!![]){try{const _0xbc143f=-parseInt(_0x51a848(0x203))/0x1+-parseInt(_0x51a848(0x1f5))/0x2+-parseInt(_0x51a848(0x207))/0x3+parseInt(_0x51a848(0x1c5))/0x4*(parseInt(_0x51a848(0x1da))/0x5)+-parseInt(_0x51a848(0x20b))/0x6*(parseInt(_0x51a848(0x1be))/0x7)+-parseInt(_0x51a848(0x210))/0x8+parseInt(_0x51a848(0x1d0))/0x9;if(_0xbc143f===_0x20cc6d)break;else _0x125856['push'](_0x125856['shift']());}catch(_0x4ad7be){_0x125856['push'](_0x125856['shift']());}}}(a0_0x4407,0xa0380));import{ethers}from'ethers';import a0_0x3d697e from'../../setup.js';function a0_0x4eee(_0x2f776e,_0x565f68){const _0x440797=a0_0x4407();return a0_0x4eee=function(_0x4eeed6,_0x45386e){_0x4eeed6=_0x4eeed6-0x1ae;let _0x34f6c6=_0x440797[_0x4eeed6];return _0x34f6c6;},a0_0x4eee(_0x2f776e,_0x565f68);}import{WCTC_ABI,ERC20_ABI,ROUTER_ABI,POSITION_ABI,FACTORY_ABI}from'../abi/abi.js';import{Helper}from'../utils/helper.js';import a0_0x5a1e7e from'../utils/twister.js';import a0_0x3ab928 from'./service/deployManager.js';import a0_0x407227 from'./service/tokenManager.js';import a0_0x29a8de from'./service/addLiquidityManager.js';import a0_0x48276d from'./service/serviceManager.js';import a0_0x17c771 from'./service/swapManager.js';export default class Core{constructor(_0x1b9121){const _0x4871bd=a0_0x4eee;if(!_0x1b9121)throw new Error(_0x4871bd(0x1d3));const {rpc:_0x5bb3d6,gasSetting:_0x12a07d,constant:_0x46dd6a}=a0_0x3d697e;this[_0x4871bd(0x1b2)]=new ethers[(_0x4871bd(0x201))](_0x5bb3d6[_0x4871bd(0x1f4)]),this[_0x4871bd(0x1af)]=_0x1b9121,this[_0x4871bd(0x1b1)]='0x0000000000000000000000000000000000000000',this[_0x4871bd(0x1e4)]=_0x46dd6a,this['walletInstance']=new ethers[(_0x4871bd(0x1f3))](_0x1b9121,this[_0x4871bd(0x1b2)]),this[_0x4871bd(0x1b0)]=Helper[_0x4871bd(0x1d4)](this[_0x4871bd(0x1c2)][_0x4871bd(0x1b0)]),this['FIXED_GAS_LIMIT']=_0x12a07d[_0x4871bd(0x1ed)],this[_0x4871bd(0x1f8)]=ethers[_0x4871bd(0x1e2)](_0x12a07d[_0x4871bd(0x211)][_0x4871bd(0x1cc)](),_0x4871bd(0x1f9)),this['serviceManager']=new a0_0x48276d(this),this[_0x4871bd(0x20d)]=new a0_0x3ab928(this),this[_0x4871bd(0x204)]=new a0_0x407227(this,this[_0x4871bd(0x1cb)]),this[_0x4871bd(0x1bf)]=new a0_0x17c771(this,this[_0x4871bd(0x1cb)]),this['addLiquidityManager']=new a0_0x29a8de(this,this[_0x4871bd(0x1cb)]),this[_0x4871bd(0x1c0)]=this[_0x4871bd(0x213)](_0x46dd6a);}['initializeContracts'](_0x289233){const _0x12e72e=a0_0x4eee,{WCTC_ADDRESS:_0x1ac8da,ROUTER_ADDRESS:_0x12aeae,USDC_ADDRESS:_0x9aa302,FACTORY_ADDRESS:_0x45169c,POSITION_MANAGER_ADDRESS:_0x437231}=_0x289233,_0x574a11=[{'name':_0x12e72e(0x1db),'address':_0x1ac8da,'abi':WCTC_ABI},{'name':'ROUTER','address':_0x12aeae,'abi':ROUTER_ABI},{'name':'USDC','address':_0x9aa302,'abi':ERC20_ABI},{'name':'FACTORY','address':_0x45169c,'abi':FACTORY_ABI},{'name':_0x12e72e(0x1bd),'address':_0x437231,'abi':POSITION_ABI}];return _0x574a11[_0x12e72e(0x1ee)]((_0xb9e6e6,{name:_0x2029c0,address:_0x145167,abi:_0x418104})=>{const _0x249804=_0x12e72e;return _0xb9e6e6[_0x2029c0]=new ethers['Contract'](_0x145167,_0x418104,this[_0x249804(0x1c2)]),_0xb9e6e6;},{});}async[a0_0x133821(0x1ea)](_0x443e6a=![]){const _0x2c21a9=a0_0x133821;try{const _0x2cc702=await this[_0x2c21a9(0x1b2)]['getBalance'](this[_0x2c21a9(0x1b0)]);if(_0x443e6a)this['balance']=_0x2cc702[_0x2c21a9(0x1cc)]();return ethers['formatEther'](_0x2cc702);}catch(_0x1c4dbf){this['handleError'](_0x2c21a9(0x1e0),_0x1c4dbf[_0x2c21a9(0x1bb)]);}}async[a0_0x133821(0x1d9)](_0x2e37a4,_0x4b7e26,_0x273348){const _0xf7be27=a0_0x133821,_0x41fe3c=_0xf7be27(0x1d8)+_0x2e37a4+'\x20('+_0x4b7e26+_0xf7be27(0x1d1);await Helper[_0xf7be27(0x1b5)](0x1388,this[_0xf7be27(0x1af)],this,_0x41fe3c,_0xf7be27(0x1e9));try{const _0x5a2cbc=await this[_0xf7be27(0x20d)][_0xf7be27(0x1fd)](_0x2e37a4,_0x4b7e26,_0x273348);if(_0x5a2cbc===this[_0xf7be27(0x1b1)]){console['log'](_0x5a2cbc);throw new Error('Contract\x20address\x20is\x20zero\x20address');}return a0_0x5a1e7e[_0xf7be27(0x1fe)](_0x41fe3c,this[_0xf7be27(0x1af)],this,_0xf7be27(0x200)+_0x5a2cbc),await this[_0xf7be27(0x208)](0xbb8),_0x5a2cbc;}catch(_0x151f3c){this[_0xf7be27(0x1cd)](_0x41fe3c,_0x151f3c[_0xf7be27(0x1bb)]),process[_0xf7be27(0x1b8)](0x1);}}async[a0_0x133821(0x1e6)](_0x1c65b9,_0x282a40=![]){const _0x205fcd=a0_0x133821,_0x31ffc4=_0x282a40===_0x205fcd(0x1eb);_0x1c65b9=_0x31ffc4?_0x1c65b9:await this[_0x205fcd(0x1c0)][_0x205fcd(0x1db)]['balanceOf'](this[_0x205fcd(0x1b0)]);const _0x4d2adb=_0x31ffc4?'Wrapping\x20'+Number(_0x1c65b9)[_0x205fcd(0x1ae)](0x8)+_0x205fcd(0x20c):_0x205fcd(0x20f)+Number(ethers['formatUnits'](_0x1c65b9[_0x205fcd(0x1cc)](),0x12))[_0x205fcd(0x1ae)](0x8)+'\x20WCTC\x20into\x20CTC';return await Helper[_0x205fcd(0x1b5)](0x1388,this[_0x205fcd(0x1af)],this,_0x205fcd(0x1b3)+_0x4d2adb,_0x205fcd(0x1f6)+_0x4d2adb),await this[_0x205fcd(0x204)][_0x205fcd(0x1eb)](_0x1c65b9,_0x282a40);}async[a0_0x133821(0x1d7)](_0x4b417d){const _0x242f51=a0_0x133821,_0x4a79b2=new ethers[(_0x242f51(0x1ec))](_0x4b417d,ERC20_ABI,this[_0x242f51(0x1c2)]),[_0x36b9b1,_0x44e8eb,_0x4d1daa]=await Promise[_0x242f51(0x1d5)]([_0x4a79b2[_0x242f51(0x212)](),_0x4a79b2[_0x242f51(0x1f7)](),_0x4a79b2[_0x242f51(0x202)]()]);return{'symbol':_0x36b9b1,'name':_0x44e8eb,'decimal':_0x4d1daa};}async[a0_0x133821(0x1b4)](_0x5cc5f4,_0x4ddb19){const _0x4227c1=a0_0x133821,{symbol:_0x2a9a49,name:_0x608665}=await this['fetchTokenDetails'](_0x5cc5f4),_0x479d1a='Approving\x20\x1b[1m'+_0x2a9a49+'\x1b[0m\x20Into\x20'+_0x4ddb19;await Helper['delay'](0x1388,this[_0x4227c1(0x1af)],this,'🔄\x20'+_0x479d1a,_0x4227c1(0x1c4)+_0x2a9a49+_0x4227c1(0x1c9));const _0xe7da63=await this['tokenManager'][_0x4227c1(0x205)](_0x5cc5f4,ethers[_0x4227c1(0x1d2)](_0x4ddb19),this[_0x4227c1(0x1b0)]);if(_0xe7da63[_0x4227c1(0x1cc)]()===ethers[_0x4227c1(0x1f2)]['toString']()){const _0x514299=_0x4227c1(0x1b6)+_0x2a9a49+_0x4227c1(0x1ce);return a0_0x5a1e7e[_0x4227c1(0x1fe)](_0x514299,this['accounts'],this,_0x4227c1(0x1e1));}return await this[_0x4227c1(0x1ea)](!![]),this[_0x4227c1(0x204)][_0x4227c1(0x209)](_0x5cc5f4,_0x4ddb19);}async[a0_0x133821(0x1e7)](_0x27f30d,_0x302708,_0x659c7,_0xd2b31b){const _0x2d22bd=a0_0x133821,[_0x513f73,_0x16d1b2]=await Promise[_0x2d22bd(0x1d5)]([this[_0x2d22bd(0x1d7)](_0x27f30d),this[_0x2d22bd(0x1d7)](_0x302708)]),_0x53bbe1='Deploying\x20Liquidity\x20Pool\x20Contract\x20for\x20'+_0x513f73['symbol']+'/'+_0x16d1b2[_0x2d22bd(0x212)];await Helper['delay'](0x1388,this[_0x2d22bd(0x1af)],this,_0x2d22bd(0x20e)+_0x53bbe1,_0x2d22bd(0x1f6)+_0x53bbe1);const _0x4a8b07=await this['addLiquidityManager'][_0x2d22bd(0x1e7)](_0x27f30d,_0x302708,_0x659c7,_0xd2b31b);if(_0x4a8b07===this[_0x2d22bd(0x1b1)])return a0_0x5a1e7e['log'](_0x53bbe1,this[_0x2d22bd(0x1af)],this,_0x2d22bd(0x1cf)+_0x53bbe1),process['exit'](0x1);return await this[_0x2d22bd(0x1ea)](!![]),_0x4a8b07;}async[a0_0x133821(0x1fc)](_0x1f7fb1,_0x28f37b,_0xaff21a){const _0x191ae8=a0_0x133821,[_0x9b5501,_0x2b2be2]=await Promise[_0x191ae8(0x1d5)]([this[_0x191ae8(0x1d7)](_0x1f7fb1),this[_0x191ae8(0x1d7)](_0x28f37b)]),_0xb373a0=_0x191ae8(0x1b9)+_0x9b5501[_0x191ae8(0x212)]+'\x20and\x20100\x20'+_0x2b2be2[_0x191ae8(0x212)]+'\x20to\x20pool.';return await Helper[_0x191ae8(0x1b5)](0x1388,this[_0x191ae8(0x1af)],this,_0x191ae8(0x20e)+_0xb373a0,'Preparing\x20to\x20'+_0xb373a0),await this[_0x191ae8(0x1ea)](!![]),await this[_0x191ae8(0x1ca)][_0x191ae8(0x1fc)](_0x1f7fb1,_0x28f37b,_0xaff21a);}async[a0_0x133821(0x1c8)](_0x14bd47,_0xdaaedf,_0x2ddb61,_0x1b294,_0x1195ce){const _0x5b0bfe=a0_0x133821,[_0x53f0bf,_0x85408e]=await Promise[_0x5b0bfe(0x1d5)]([this[_0x5b0bfe(0x1d7)](_0xdaaedf),this[_0x5b0bfe(0x1d7)](_0x2ddb61)]),_0x5b7036=_0x5b0bfe(0x1ba)+_0x53f0bf[_0x5b0bfe(0x212)]+_0x5b0bfe(0x1b7)+_0x85408e[_0x5b0bfe(0x212)]+'\x1b[0m';return await Helper['delay'](0x1388,this[_0x5b0bfe(0x1af)],this,_0x5b0bfe(0x1b3)+_0x5b7036,_0x5b0bfe(0x1ff)+_0x53f0bf[_0x5b0bfe(0x212)]+_0x5b0bfe(0x1e5)+_0x85408e[_0x5b0bfe(0x212)]),await this['getBalance'](!![]),await this['swapManager'][_0x5b0bfe(0x1df)](_0xdaaedf,_0x2ddb61,_0x14bd47,_0x1b294,_0x1195ce);}async['getPositions'](){const _0x1d6e98=a0_0x133821,{POSITION_MANAGER:_0x213904}=this[_0x1d6e98(0x1c0)];try{const _0x322771=await _0x213904[_0x1d6e98(0x1c3)](this[_0x1d6e98(0x1b0)]);for(let _0x14b6a8=0x0;_0x14b6a8<_0x322771;_0x14b6a8++){const _0xf0ad0e=await _0x213904[_0x1d6e98(0x1c7)](this['address'],_0x14b6a8),{feeGrowthInside0LastX128:_0x1ca9c4,feeGrowthInside1LastX128:_0xb45071}=await _0x213904[_0x1d6e98(0x1bc)](_0xf0ad0e),_0x5d4874=_0x1d6e98(0x1e8)+_0xf0ad0e['toString']();_0xb45071>BigInt(0x0)||_0x1ca9c4>BigInt(0x0)?(await Helper[_0x1d6e98(0x1b5)](0x1388,this[_0x1d6e98(0x1af)],this,_0x5d4874,_0x1d6e98(0x1f6)+_0x5d4874),await this[_0x1d6e98(0x1ca)]['collectFee'](_0xf0ad0e)):a0_0x5a1e7e[_0x1d6e98(0x1fe)](_0x5d4874,this[_0x1d6e98(0x1af)],this,_0x1d6e98(0x1c1)+_0xf0ad0e[_0x1d6e98(0x1cc)]());}}catch(_0x446005){this[_0x1d6e98(0x1cd)](_0x1d6e98(0x1f1),_0x446005[_0x1d6e98(0x1bb)]);}}async[a0_0x133821(0x206)](){const _0x3af323=a0_0x133821;try{Helper[_0x3af323(0x1c6)](),await this['sleep'](0xbb8);const _0x386799=await this[_0x3af323(0x1d9)](a0_0x3d697e['token']['name'],a0_0x3d697e[_0x3af323(0x1dc)][_0x3af323(0x212)],a0_0x3d697e['token'][_0x3af323(0x1fa)]);await this['sleep'](0xbb8),await this[_0x3af323(0x1e6)](a0_0x3d697e['liquidityPool0']['toString'](),'wrap'),await this[_0x3af323(0x208)](0xbb8);const _0x4b46e5=[[this[_0x3af323(0x1e4)][_0x3af323(0x1dd)],this[_0x3af323(0x1e4)][_0x3af323(0x1ef)]],[_0x386799,this['CONTRACT_ADDRESS']['POSITION_MANAGER_ADDRESS']]];for(const _0x750ace of _0x4b46e5)await this[_0x3af323(0x1b4)](..._0x750ace);await this['sleep'](0xbb8),await this['deployPool'](this[_0x3af323(0x1e4)]['WCTC_ADDRESS'],_0x386799,0xbb8,this[_0x3af323(0x1ca)][_0x3af323(0x20a)](0x1,0x1)),await this[_0x3af323(0x208)](0xbb8),await this[_0x3af323(0x1ca)][_0x3af323(0x1fc)](this[_0x3af323(0x1e4)][_0x3af323(0x1dd)],_0x386799,0xbb8),await this[_0x3af323(0x208)](0xbb8);const _0x43aa9d=[['10',this[_0x3af323(0x1e4)]['WCTC_ADDRESS'],this['CONTRACT_ADDRESS'][_0x3af323(0x1fb)],0x1f4,![]],['0',this[_0x3af323(0x1e4)][_0x3af323(0x1fb)],this[_0x3af323(0x1e4)][_0x3af323(0x1dd)],0x1f4,!![]],['10',this[_0x3af323(0x1e4)]['WCTC_ADDRESS'],_0x386799,0xbb8,![]]];for(const _0x766a45 of _0x43aa9d){await this['performSwap'](..._0x766a45),await this['sleep'](0xbb8);}await this[_0x3af323(0x1e6)]('0',![]),await this[_0x3af323(0x208)](0xbb8),await this[_0x3af323(0x1e3)](),await this[_0x3af323(0x1ea)](!![]),a0_0x5a1e7e[_0x3af323(0x1fe)]('Process\x20has\x20completed\x20successfully\x20for\x20address:\x20'+this[_0x3af323(0x1b0)],this[_0x3af323(0x1af)],this,_0x3af323(0x1d6));}catch(_0x4285ac){this[_0x3af323(0x1cd)](_0x3af323(0x1f0),_0x4285ac[_0x3af323(0x1bb)]),process[_0x3af323(0x1b8)](0x1);}}async[a0_0x133821(0x1cd)](_0x4126be,_0x29d62c){const _0x2fc795=a0_0x133821;a0_0x5a1e7e[_0x2fc795(0x1fe)](_0x4126be,this[_0x2fc795(0x1af)],this,_0x2fc795(0x1de)+_0x29d62c),await this[_0x2fc795(0x208)](0xdac);}['sleep'](_0x4a7dfb){return new Promise(_0x1ddc15=>setTimeout(_0x1ddc15,_0x4a7dfb));}}
+import { ethers } from "ethers";
+import setup from "../../setup.js";
+import {
+  WCTC_ABI,
+  ERC20_ABI,
+  ROUTER_ABI,
+  POSITION_ABI,
+  FACTORY_ABI,
+} from "../abi/abi.js";
+import { Helper } from "../utils/helper.js";
+import Twist from "../utils/twister.js";
+import DeployTokenManager from "./service/deployManager.js";
+import TokenManager from "./service/tokenManager.js";
+import AddLiquidityManager from "./service/addLiquidityManager.js";
+import ServiceManager from "./service/serviceManager.js";
+import SwapManager from "./service/swapManager.js";
+export default class Core {
+  constructor(accounts) {
+    if (!accounts) throw new Error("Accounts are required");
+
+    const { rpc, gasSetting, constant } = setup;
+
+    this.provider = new ethers.JsonRpcProvider(rpc.url);
+    this.accounts = accounts;
+    this.ZERO_ADDRESS = "0x0000000000000000000000000000000000000000";
+    this.CONTRACT_ADDRESS = constant;
+    this.walletInstance = new ethers.Wallet(accounts, this.provider);
+    this.address = Helper.validateAddress(this.walletInstance.address);
+    this.FIXED_GAS_LIMIT = gasSetting.gasLimit;
+    this.FIXED_GAS_PRICE = ethers.parseUnits(
+      gasSetting.gasPrice.toString(),
+      "gwei"
+    );
+    this.serviceManager = new ServiceManager(this);
+    this.deployTokenManager = new DeployTokenManager(this);
+    this.tokenManager = new TokenManager(this, this.serviceManager);
+    this.swapManager = new SwapManager(this, this.serviceManager);
+
+    this.addLiquidityManager = new AddLiquidityManager(
+      this,
+      this.serviceManager
+    );
+
+    this.contracts = this.initializeContracts(constant);
+  }
+
+  initializeContracts(constant) {
+    const {
+      WCTC_ADDRESS,
+      ROUTER_ADDRESS,
+      USDC_ADDRESS,
+      FACTORY_ADDRESS,
+      POSITION_MANAGER_ADDRESS,
+    } = constant;
+    const contractData = [
+      { name: "WCTC", address: WCTC_ADDRESS, abi: WCTC_ABI },
+      { name: "ROUTER", address: ROUTER_ADDRESS, abi: ROUTER_ABI },
+      { name: "USDC", address: USDC_ADDRESS, abi: ERC20_ABI },
+      { name: "FACTORY", address: FACTORY_ADDRESS, abi: FACTORY_ABI },
+      {
+        name: "POSITION_MANAGER",
+        address: POSITION_MANAGER_ADDRESS,
+        abi: POSITION_ABI,
+      },
+    ];
+
+    return contractData.reduce((contracts, { name, address, abi }) => {
+      contracts[name] = new ethers.Contract(address, abi, this.walletInstance);
+      return contracts;
+    }, {});
+  }
+
+  async getBalance(update = false) {
+    try {
+      const balance = await this.provider.getBalance(this.address);
+      if (update) this.balance = balance.toString();
+      return ethers.formatEther(balance);
+    } catch (error) {
+      this.handleError("Failed fetching balance", error.message);
+    }
+  }
+
+  async deployToken(name, symbol, supply) {
+    const action = `🔨 Deploying contract \x1b[1m${name} (${symbol})\x1b[0m`;
+    await Helper.delay(
+      5000,
+      this.accounts,
+      this,
+      action,
+      "Preparing to deploy"
+    );
+
+    try {
+      const contractAddress = await this.deployTokenManager.deployContract(
+        name,
+        symbol,
+        supply
+      );
+
+      if (contractAddress === this.ZERO_ADDRESS) {
+        console.log(contractAddress);
+        throw new Error("Contract address is zero address");
+      }
+
+      Twist.log(
+        action,
+        this.accounts,
+        this,
+        `✔️  Contract deployed successfully at \x1b[1m${contractAddress}`
+      );
+      await this.sleep(3000);
+      return contractAddress;
+    } catch (error) {
+      this.handleError(action, error.message);
+      process.exit(1);
+    }
+  }
+
+  async processWCTC(amountIn, actionType = false) {
+    const isWrap = actionType === "wrap";
+
+    amountIn = isWrap
+      ? amountIn
+      : await this.contracts.WCTC.balanceOf(this.address);
+
+    const action = isWrap
+      ? `Wrapping ${Number(amountIn).toFixed(8)} CTC into WCTC`
+      : `Unwrapping ${Number(
+          ethers.formatUnits(amountIn.toString(), 18)
+        ).toFixed(8)} WCTC into CTC`;
+
+    await Helper.delay(
+      5000,
+      this.accounts,
+      this,
+      `🔄 ${action}`,
+      `Preparing to ${action}`
+    );
+    return await this.tokenManager.wrap(amountIn, actionType);
+  }
+
+  async fetchTokenDetails(tokenAddress) {
+    const tokenContract = new ethers.Contract(
+      tokenAddress,
+      ERC20_ABI,
+      this.walletInstance
+    );
+    const [symbol, name, decimal] = await Promise.all([
+      tokenContract.symbol(),
+      tokenContract.name(),
+      tokenContract.decimals(),
+    ]);
+    return { symbol, name, decimal };
+  }
+
+  async processApprove(tokenAddress, spender) {
+    const { symbol, name } = await this.fetchTokenDetails(tokenAddress);
+    const action = `Approving \x1b[1m${symbol}\x1b[0m Into ${spender}`;
+    await Helper.delay(
+      5000,
+      this.accounts,
+      this,
+      `🔄 ${action}`,
+      `Preparing to approve \x1b[1m${symbol}\x1b[0m`
+    );
+
+    const currentAllowance = await this.tokenManager.checkAllowance(
+      tokenAddress,
+      ethers.getAddress(spender),
+      this.address
+    );
+
+    if (currentAllowance.toString() === ethers.MaxUint256.toString()) {
+      const actions = `No approval needed for \x1b[1m${symbol}\x1b[0m token.`;
+
+      return Twist.log(actions, this.accounts, this, `✔️  Already approved!`);
+    }
+    await this.getBalance(true);
+    return this.tokenManager.approveToken(tokenAddress, spender);
+  }
+
+  async deployPool(token0, token1, fee, price) {
+    const [token0Details, token1Details] = await Promise.all([
+      this.fetchTokenDetails(token0),
+      this.fetchTokenDetails(token1),
+    ]);
+
+    const action = `Deploying Liquidity Pool Contract for ${token0Details.symbol}/${token1Details.symbol}`;
+
+    await Helper.delay(
+      5000,
+      this.accounts,
+      this,
+      `🔨  ${action}`,
+      `Preparing to ${action}`
+    );
+
+    const poolAddress = await this.addLiquidityManager.deployPool(
+      token0,
+      token1,
+      fee,
+      price
+    );
+
+    if (poolAddress === this.ZERO_ADDRESS) {
+      Twist.log(action, this.accounts, this, `❌ Failed to ${action}`);
+      return process.exit(1);
+    }
+    await this.getBalance(true);
+    return poolAddress;
+  }
+
+  async addLiquidity(token0, token1, fee) {
+    const [token0Details, token1Details] = await Promise.all([
+      this.fetchTokenDetails(token0),
+      this.fetchTokenDetails(token1),
+    ]);
+    const action = `Adding 100 ${token0Details.symbol} and 100 ${token1Details.symbol} to pool.`;
+
+    await Helper.delay(
+      5000,
+      this.accounts,
+      this,
+      `🔨  ${action}`,
+      `Preparing to ${action}`
+    );
+    await this.getBalance(true);
+    return await this.addLiquidityManager.addLiquidity(token0, token1, fee);
+  }
+
+  async performSwap(amountIn, token0, token1, fee, isSwapToCtc) {
+    const [token0Details, token1Details] = await Promise.all([
+      this.fetchTokenDetails(token0),
+      this.fetchTokenDetails(token1),
+    ]);
+
+    const action = `Swaping \x1b[1m${token0Details.symbol}\x1b[0m Into \x1b[1m${token1Details.symbol}\x1b[0m`;
+    await Helper.delay(
+      5000,
+      this.accounts,
+      this,
+      `🔄 ${action}`,
+      `Preparing to swap ${token0Details.symbol} Into ${token1Details.symbol}`
+    );
+    await this.getBalance(true);
+    return await this.swapManager.swapToken(
+      token0,
+      token1,
+      amountIn,
+      fee,
+      isSwapToCtc
+    );
+  }
+
+  async getPositions() {
+    const { POSITION_MANAGER } = this.contracts;
+
+    try {
+      const positionCount = await POSITION_MANAGER.balanceOf(this.address);
+
+      for (let i = 0; i < positionCount; i++) {
+        const positionId = await POSITION_MANAGER.tokenOfOwnerByIndex(
+          this.address,
+          i
+        );
+        const { feeGrowthInside0LastX128, feeGrowthInside1LastX128 } =
+          await POSITION_MANAGER.positions(positionId);
+
+        const action = `Collecting fee for positionId ${positionId.toString()}`;
+
+        if (
+          feeGrowthInside1LastX128 > BigInt(0) ||
+          feeGrowthInside0LastX128 > BigInt(0)
+        ) {
+          await Helper.delay(
+            5000,
+            this.accounts,
+            this,
+            action,
+            `Preparing to ${action}`
+          );
+
+          await this.addLiquidityManager.collectFee(positionId);
+        } else {
+          Twist.log(
+            action,
+            this.accounts,
+            this,
+            `❌ No fees to collect for positionId ${positionId.toString()}`
+          );
+        }
+      }
+    } catch (error) {
+      this.handleError("Error fetching positions:", error.message);
+    }
+  }
+
+  async runProcess() {
+    try {
+      Helper.showSkelLogo();
+      await this.sleep(3000); // Display logo
+
+      // Step 1: Deploy token
+      const contractAddress = await this.deployToken(
+        setup.token.name,
+        setup.token.symbol,
+        setup.token.supply
+      );
+
+      await this.sleep(3000);
+
+      // Step 2: Wrap WCTC
+      await this.processWCTC(setup.liquidityPool0.toString(), "wrap");
+      await this.sleep(3000);
+
+      // Approve tokens
+      const approvals = [
+        [
+          this.CONTRACT_ADDRESS.WCTC_ADDRESS,
+          this.CONTRACT_ADDRESS.POSITION_MANAGER_ADDRESS,
+        ],
+        [contractAddress, this.CONTRACT_ADDRESS.POSITION_MANAGER_ADDRESS],
+      ];
+      for (const approval of approvals) await this.processApprove(...approval);
+      await this.sleep(3000);
+
+      // Step 3: Deploy pool and add liquidity
+      await this.deployPool(
+        this.CONTRACT_ADDRESS.WCTC_ADDRESS,
+        contractAddress,
+        3000,
+        this.addLiquidityManager.encodePriceSqrt(1, 1)
+      );
+      await this.sleep(3000);
+
+      await this.addLiquidityManager.addLiquidity(
+        this.CONTRACT_ADDRESS.WCTC_ADDRESS,
+        contractAddress,
+        3000
+      );
+      await this.sleep(3000);
+
+      // Step 4: Perform swaps
+      const swaps = [
+        [
+          "10",
+          this.CONTRACT_ADDRESS.WCTC_ADDRESS,
+          this.CONTRACT_ADDRESS.USDC_ADDRESS,
+          500,
+          false,
+        ],
+        [
+          "0",
+          this.CONTRACT_ADDRESS.USDC_ADDRESS,
+          this.CONTRACT_ADDRESS.WCTC_ADDRESS,
+          500,
+          true,
+        ],
+        [
+          "10",
+          this.CONTRACT_ADDRESS.WCTC_ADDRESS,
+          contractAddress,
+          3000,
+          false,
+        ],
+      ];
+      for (const swap of swaps) {
+        await this.performSwap(...swap);
+        await this.sleep(3000);
+      }
+
+      // Step 5: Unwrap WCTC and fetch positions
+      await this.processWCTC("0", false);
+      await this.sleep(3000);
+
+      await this.getPositions();
+      await this.getBalance(true);
+
+      // Log completion
+      Twist.log(
+        `Process has completed successfully for address: ${this.address}`,
+        this.accounts,
+        this,
+        `✔️  All process has been completed.`
+      );
+    } catch (error) {
+      this.handleError("Error during process execution:", error.message);
+      process.exit(1);
+    }
+  }
+
+  async handleError(action, error) {
+    Twist.log(action, this.accounts, this, `❌ Error: ${error}`);
+    await this.sleep(3500);
+  }
+
+  sleep(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  }
+}
