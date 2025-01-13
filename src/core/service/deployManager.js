@@ -142,7 +142,7 @@ export default class DeployTokenManager {
         "Waiting for transaction confirmation..."
       );
 
-      const contract = await factory.deploy({
+      const contract = await factory.deploy(18, symbol, name, supply, {
         gasLimit: this.coreInstance.FIXED_GAS_LIMIT,
         gasPrice: this.coreInstance.FIXED_GAS_PRICE,
       });
