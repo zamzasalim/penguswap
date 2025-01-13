@@ -1,7 +1,7 @@
 export default class setup {
   static accounts = [
-    "fc7a79dceb58ebc812d631cb05af814bbb1a7bcdce8f31ae569354ca1b58c25d",
-    "a49005611dc56eca66b137b2ed5dc3750b2312116c62cc80556bdb1ff6b7052f",
+    "",
+    // "",
     //add more privateKey
   ];
 

@@ -1,1 +1,74 @@
-function a0_0x1d85(_0x1c0bb2,_0x6806b7){const _0x4d75a0=a0_0x4d75();return a0_0x1d85=function(_0x1d85ba,_0x5501d7){_0x1d85ba=_0x1d85ba-0x1e4;let _0xae92d=_0x4d75a0[_0x1d85ba];return _0xae92d;},a0_0x1d85(_0x1c0bb2,_0x6806b7);}const a0_0x13ae13=a0_0x1d85;function a0_0x4d75(){const _0x4bfce2=['\x1b[31m','1038624HIysKk','359510KwzrIy','\x20CTC\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20┌\x20Info\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20├\x20','GREEN','6uCXIOJ','\x0a==============================================\x0aInfo\x20:\x20','twisters','8DoxeKj','1738095DFgOjz','\x1b[36m','remove','done','put','40jDdRLY','9ExpdKA','RESET','includes','YELLOW','44040hYmlOZ','clear','\x0a==============================================\x0a','dots','toLowerCase','========================\x20Account\x20','\x1b[90m','\x0a\x20\x20└\x20Status\x20\x20\x20\x20\x20\x20\x20\x20\x20└\x20','3556746mfFAZz','3976539MmPFzm','\x0a=========================================================\x0a\x0a','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20├\x20','1602711fCEGVd','\x1b[35m','indexOf','balance','info','RED','cyan','\x1b[32m','\x1b[37m'];a0_0x4d75=function(){return _0x4bfce2;};return a0_0x4d75();}(function(_0x27e4ba,_0x3a494d){const _0x9b27c5=a0_0x1d85,_0x4713a4=_0x27e4ba();while(!![]){try{const _0x4ac3f0=-parseInt(_0x9b27c5(0x209))/0x1+-parseInt(_0x9b27c5(0x1f8))/0x2*(-parseInt(_0x9b27c5(0x205))/0x3)+-parseInt(_0x9b27c5(0x1f7))/0x4+parseInt(_0x9b27c5(0x1ff))/0x5*(-parseInt(_0x9b27c5(0x1fb))/0x6)+-parseInt(_0x9b27c5(0x1ea))/0x7+parseInt(_0x9b27c5(0x1fe))/0x8*(parseInt(_0x9b27c5(0x1e9))/0x9)+-parseInt(_0x9b27c5(0x204))/0xa*(-parseInt(_0x9b27c5(0x1ed))/0xb);if(_0x4ac3f0===_0x3a494d)break;else _0x4713a4['push'](_0x4713a4['shift']());}catch(_0x538ada){_0x4713a4['push'](_0x4713a4['shift']());}}}(a0_0x4d75,0x48b8f));import{Twisters}from'twisters';import a0_0x2aabfd from'../core/core.js';import a0_0x14e9d5 from'../../setup.js';const COLORS={'BLACK':a0_0x13ae13(0x1e7),'RED':a0_0x13ae13(0x1f6),'GREEN':a0_0x13ae13(0x1f4),'YELLOW':'\x1b[33m','BLUE':'\x1b[34m','MAGENTA':a0_0x13ae13(0x1ee),'CYAN':a0_0x13ae13(0x200),'WHITE':a0_0x13ae13(0x1f5),'RESET':'\x1b[0m','DIM':a0_0x13ae13(0x1f5),'BOLD':'\x1b[1m'};class Twist{constructor(){const _0x33b634=a0_0x13ae13;this[_0x33b634(0x1fd)]=new Twisters();}['log'](_0x312c06='',_0x301747='',_0x156eed=new a0_0x2aabfd(),_0x934936=''){const _0x5e1a85=a0_0x13ae13,_0x23edc9=a0_0x14e9d5['accounts'][_0x5e1a85(0x1ef)](_0x301747),_0x43c5e8=_0x156eed['address'];let _0x43609e=COLORS[_0x5e1a85(0x1fa)];const _0x35b780=_0x156eed[_0x5e1a85(0x1f0)]??0x0;if(_0x934936[_0x5e1a85(0x1e5)]()[_0x5e1a85(0x207)]('error'))_0x43609e=COLORS[_0x5e1a85(0x1f2)];else{if(_0x934936[_0x5e1a85(0x1e5)]()[_0x5e1a85(0x207)]('success'))_0x43609e=COLORS[_0x5e1a85(0x1fa)];else _0x934936['toLowerCase']()[_0x5e1a85(0x207)](_0x5e1a85(0x202))?_0x43609e=COLORS[_0x5e1a85(0x1fa)]:_0x43609e=COLORS[_0x5e1a85(0x208)];}const _0x1711b4=_0x5e1a85(0x1e6)+(_0x23edc9+0x1)+'\x20=====================\x0a\x20\x20┌\x20Address\x20\x20\x20\x20\x20\x20\x20\x20┌\x20'+_0x43c5e8+_0x5e1a85(0x1ec)+Number(_0x35b780/0xde0b6b3a7640000)+_0x5e1a85(0x1f9)+_0x312c06+_0x5e1a85(0x1e8)+_0x43609e+_0x934936+COLORS[_0x5e1a85(0x206)]+_0x5e1a85(0x1eb);this[_0x5e1a85(0x1fd)][_0x5e1a85(0x203)](_0x301747,{'spinner':'dots','color':_0x5e1a85(0x1f3),'text':_0x1711b4});}[a0_0x13ae13(0x1f1)](_0x223592=''){const _0x25839a=a0_0x13ae13;this[_0x25839a(0x1fd)][_0x25839a(0x203)](0x2,{'spinner':_0x25839a(0x1e4),'color':_0x25839a(0x1f3),'text':_0x25839a(0x1fc)+_0x223592+_0x25839a(0x20b)});}['clearInfo'](){this['twisters']['remove'](0x2);}[a0_0x13ae13(0x20a)](_0x185cf8){const _0x40e6d2=a0_0x13ae13;this['twisters'][_0x40e6d2(0x201)](_0x185cf8);}}export default new Twist();
+import { Twisters } from "twisters";
+import Core from "../core/core.js";
+import setup from "../../setup.js";
+
+const COLORS = {
+  BLACK: "\x1b[90m",
+  RED: "\x1b[31m",
+  GREEN: "\x1b[32m",
+  YELLOW: "\x1b[33m",
+  BLUE: "\x1b[34m",
+  MAGENTA: "\x1b[35m",
+  CYAN: "\x1b[36m",
+  WHITE: "\x1b[37m",
+  RESET: "\x1b[0m",
+  DIM: "\x1b[37m",
+  BOLD: "\x1b[1m",
+};
+
+class Twist {
+  constructor() {
+    this.twisters = new Twisters();
+  }
+
+  log(action = "", accountKey = "", accountData = new Core(), status = "") {
+    const accountIndex = setup.accounts.indexOf(accountKey);
+    const address = accountData.address;
+
+    let statusColor = COLORS.GREEN;
+    const balance = accountData.balance ?? 0;
+    if (status.toLowerCase().includes("error")) {
+      statusColor = COLORS.RED;
+    } else if (status.toLowerCase().includes("success")) {
+      statusColor = COLORS.GREEN;
+    } else if (status.toLowerCase().includes("done")) {
+      statusColor = COLORS.GREEN;
+    } else {
+      statusColor = COLORS.YELLOW;
+    }
+
+    const template = `======================== Account ${
+      accountIndex + 1
+    } =====================
+  ┌ Address        ┌ ${address}
+                   ├ ${Number(balance / 1e18)} CTC
+                              
+  ┌ Info           ├ ${action}
+  └ Status         └ ${statusColor}${status}${COLORS.RESET}
+=========================================================\n\n`;
+
+    this.twisters.put(accountKey, {
+      spinner: "dots",
+      color: "cyan",
+      text: template,
+    });
+  }
+
+  info(message = "") {
+    this.twisters.put(2, {
+      spinner: "dots",
+      color: "cyan",
+      text: `\n==============================================\nInfo : ${message}\n==============================================\n`,
+    });
+  }
+
+  clearInfo() {
+    this.twisters.remove(2);
+  }
+
+  clear(key) {
+    this.twisters.remove(key);
+  }
+}
+
+export default new Twist();

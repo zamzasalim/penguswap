@@ -1,1 +1,93 @@
-(function(_0x3bb1d1,_0x5f0a74){const _0xe071cf=a0_0x32fe,_0x2f507c=_0x3bb1d1();while(!![]){try{const _0x501d1e=parseInt(_0xe071cf(0x1da))/0x1*(-parseInt(_0xe071cf(0x1de))/0x2)+-parseInt(_0xe071cf(0x1dd))/0x3+parseInt(_0xe071cf(0x1d9))/0x4*(parseInt(_0xe071cf(0x1db))/0x5)+parseInt(_0xe071cf(0x1dc))/0x6+-parseInt(_0xe071cf(0x1e1))/0x7*(-parseInt(_0xe071cf(0x1e3))/0x8)+parseInt(_0xe071cf(0x1e4))/0x9+parseInt(_0xe071cf(0x1df))/0xa*(-parseInt(_0xe071cf(0x1e2))/0xb);if(_0x501d1e===_0x5f0a74)break;else _0x2f507c['push'](_0x2f507c['shift']());}catch(_0x240c6d){_0x2f507c['push'](_0x2f507c['shift']());}}}(a0_0x2e02,0x300dd));function a0_0x32fe(_0x1fbb8b,_0x311ed1){const _0x2e0240=a0_0x2e02();return a0_0x32fe=function(_0x32fe9d,_0x62313f){_0x32fe9d=_0x32fe9d-0x1d8;let _0x5995c5=_0x2e0240[_0x32fe9d];return _0x5995c5;},a0_0x32fe(_0x1fbb8b,_0x311ed1);}export function solidityCode(_0x12730e){const _0x330688=a0_0x32fe,_0x3eb17b=''+_0x12730e[_0x330688(0x1e0)](/\s+/g,'');return _0x330688(0x1e5)+_0x3eb17b+_0x330688(0x1d8);}function a0_0x2e02(){const _0x2d43e7=['1118516wYbDmg','582989KYTpAq','8eeLaDr','2618109RfPZyK','\x0a\x20\x20//\x20SPDX-License-Identifier:\x20MIT\x0apragma\x20solidity\x20^0.8.0;\x20\x0a\x0acontract\x20','\x20{\x0a\x20\x20\x20\x20event\x20Approval(address\x20indexed\x20tokenOwner,\x20address\x20indexed\x20spender,\x20uint\x20tokens);\x0a\x20\x20\x20\x20event\x20Transfer(address\x20indexed\x20from,\x20address\x20indexed\x20to,\x20uint\x20tokens);\x0a\x0a\x20\x20\x20\x20mapping(address\x20=>\x20uint256)\x20balances;\x0a\x20\x20\x20\x20mapping(address\x20=>\x20mapping(address\x20=>\x20uint256))\x20allowed;\x0a\x20\x20\x20\x20\x0a\x20\x20\x20\x20string\x20public\x20symbol;\x0a\x20\x20\x20\x20uint8\x20public\x20decimals;\x0a\x20\x20\x20\x20string\x20public\x20name;\x0a\x20\x20\x20\x20uint256\x20private\x20_totalSupply;\x0a\x20\x20\x20\x20address\x20public\x20owner;\x20\x0a\x0a\x20\x20\x20\x20modifier\x20onlyOwner()\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20require(msg.sender\x20==\x20owner,\x20\x22Only\x20owner\x20can\x20execute\x20this\x22);\x0a\x20\x20\x20\x20\x20\x20\x20\x20_;\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20constructor(\x0a\x20\x20\x20\x20\x20\x20\x20\x20uint8\x20_decimals,\x0a\x20\x20\x20\x20\x20\x20\x20\x20string\x20memory\x20_symbol,\x0a\x20\x20\x20\x20\x20\x20\x20\x20string\x20memory\x20_name,\x0a\x20\x20\x20\x20\x20\x20\x20\x20uint256\x20_total_supply\x0a\x20\x20\x20\x20)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20decimals\x20=\x20_decimals;\x0a\x20\x20\x20\x20\x20\x20\x20\x20symbol\x20=\x20_symbol;\x0a\x20\x20\x20\x20\x20\x20\x20\x20name\x20=\x20_name;\x0a\x20\x20\x20\x20\x20\x20\x20\x20_totalSupply\x20=\x20_total_supply\x20*\x20(10\x20**\x20uint256(_decimals));\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20balances[msg.sender]\x20=\x20_totalSupply;\x0a\x20\x20\x20\x20\x20\x20\x20\x20owner\x20=\x20msg.sender;\x0a\x20\x20\x20\x20\x20\x20\x20\x20emit\x20Transfer(address(0),\x20msg.sender,\x20_totalSupply);\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20function\x20totalSupply()\x20public\x20view\x20returns\x20(uint256)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20return\x20_totalSupply;\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20function\x20balanceOf(address\x20tokenOwner)\x20public\x20view\x20returns\x20(uint)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20return\x20balances[tokenOwner];\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20function\x20transfer(address\x20receiver,\x20uint\x20numTokens)\x20public\x20returns\x20(bool)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20require(numTokens\x20<=\x20balances[msg.sender],\x20\x22Insufficient\x20balance\x22);\x0a\x20\x20\x20\x20\x20\x20\x20\x20balances[msg.sender]\x20-=\x20numTokens;\x0a\x20\x20\x20\x20\x20\x20\x20\x20balances[receiver]\x20+=\x20numTokens;\x0a\x20\x20\x20\x20\x20\x20\x20\x20emit\x20Transfer(msg.sender,\x20receiver,\x20numTokens);\x0a\x20\x20\x20\x20\x20\x20\x20\x20return\x20true;\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20function\x20approve(address\x20delegate,\x20uint\x20numTokens)\x20public\x20returns\x20(bool)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20allowed[msg.sender][delegate]\x20=\x20numTokens;\x0a\x20\x20\x20\x20\x20\x20\x20\x20emit\x20Approval(msg.sender,\x20delegate,\x20numTokens);\x0a\x20\x20\x20\x20\x20\x20\x20\x20return\x20true;\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20function\x20allowance(address\x20_owner,\x20address\x20delegate)\x20public\x20view\x20returns\x20(uint)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20return\x20allowed[_owner][delegate];\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20function\x20transferFrom(address\x20_owner,\x20address\x20buyer,\x20uint\x20numTokens)\x20public\x20returns\x20(bool)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20require(numTokens\x20<=\x20balances[_owner],\x20\x22Insufficient\x20balance\x22);\x0a\x20\x20\x20\x20\x20\x20\x20\x20require(numTokens\x20<=\x20allowed[_owner][msg.sender],\x20\x22Allowance\x20exceeded\x22);\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20balances[_owner]\x20-=\x20numTokens;\x0a\x20\x20\x20\x20\x20\x20\x20\x20allowed[_owner][msg.sender]\x20-=\x20numTokens;\x0a\x20\x20\x20\x20\x20\x20\x20\x20balances[buyer]\x20+=\x20numTokens;\x0a\x20\x20\x20\x20\x20\x20\x20\x20emit\x20Transfer(_owner,\x20buyer,\x20numTokens);\x0a\x20\x20\x20\x20\x20\x20\x20\x20return\x20true;\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20function\x20mint(address\x20to,\x20uint256\x20value)\x20public\x20onlyOwner\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20require(to\x20!=\x20address(0),\x20\x22Cannot\x20mint\x20to\x20the\x20zero\x20address\x22);\x0a\x20\x20\x20\x20\x20\x20\x20\x20_totalSupply\x20+=\x20value;\x0a\x20\x20\x20\x20\x20\x20\x20\x20balances[to]\x20+=\x20value;\x0a\x20\x20\x20\x20\x20\x20\x20\x20emit\x20Transfer(address(0),\x20to,\x20value);\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20function\x20burn(uint256\x20value)\x20public\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20require(balances[msg.sender]\x20>=\x20value,\x20\x22Insufficient\x20balance\x20to\x20burn\x22);\x0a\x20\x20\x20\x20\x20\x20\x20\x20_totalSupply\x20-=\x20value;\x0a\x20\x20\x20\x20\x20\x20\x20\x20balances[msg.sender]\x20-=\x20value;\x0a\x20\x20\x20\x20\x20\x20\x20\x20emit\x20Transfer(msg.sender,\x20address(0),\x20value);\x0a\x20\x20\x20\x20}\x0a}\x0a\x0a\x20\x20','89248XziAHX','1fIcUmk','65otNZoQ','507666oLxIFo','995655KEZVpo','63294vsWXdy','50raZdNf','replace'];a0_0x2e02=function(){return _0x2d43e7;};return a0_0x2e02();}
+export function solidityCode(name) {
+  const contractName = `${name.replace(/\s+/g, "")}`;
+  return `
+  // SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0; 
+
+contract ${contractName} {
+    event Approval(address indexed tokenOwner, address indexed spender, uint tokens);
+    event Transfer(address indexed from, address indexed to, uint tokens);
+
+    mapping(address => uint256) balances;
+    mapping(address => mapping(address => uint256)) allowed;
+    
+    string public symbol;
+    uint8 public decimals;
+    string public name;
+    uint256 private _totalSupply;
+    address public owner; 
+
+    modifier onlyOwner() {
+        require(msg.sender == owner, "Only owner can execute this");
+        _;
+    }
+
+    constructor(
+        uint8 _decimals,
+        string memory _symbol,
+        string memory _name,
+        uint256 _total_supply
+    ) {
+        decimals = _decimals;
+        symbol = _symbol;
+        name = _name;
+        _totalSupply = _total_supply * (10 ** uint256(_decimals)); 
+        balances[msg.sender] = _totalSupply;
+        owner = msg.sender;
+        emit Transfer(address(0), msg.sender, _totalSupply);
+    }
+
+    function totalSupply() public view returns (uint256) {
+        return _totalSupply;
+    }
+
+    function balanceOf(address tokenOwner) public view returns (uint) {
+        return balances[tokenOwner];
+    }
+
+    function transfer(address receiver, uint numTokens) public returns (bool) {
+        require(numTokens <= balances[msg.sender], "Insufficient balance");
+        balances[msg.sender] -= numTokens;
+        balances[receiver] += numTokens;
+        emit Transfer(msg.sender, receiver, numTokens);
+        return true;
+    }
+
+    function approve(address delegate, uint numTokens) public returns (bool) {
+        allowed[msg.sender][delegate] = numTokens;
+        emit Approval(msg.sender, delegate, numTokens);
+        return true;
+    }
+
+    function allowance(address _owner, address delegate) public view returns (uint) {
+        return allowed[_owner][delegate];
+    }
+
+    function transferFrom(address _owner, address buyer, uint numTokens) public returns (bool) {
+        require(numTokens <= balances[_owner], "Insufficient balance");
+        require(numTokens <= allowed[_owner][msg.sender], "Allowance exceeded");
+
+        balances[_owner] -= numTokens;
+        allowed[_owner][msg.sender] -= numTokens;
+        balances[buyer] += numTokens;
+        emit Transfer(_owner, buyer, numTokens);
+        return true;
+    }
+
+    function mint(address to, uint256 value) public onlyOwner {
+        require(to != address(0), "Cannot mint to the zero address");
+        _totalSupply += value;
+        balances[to] += value;
+        emit Transfer(address(0), to, value);
+    }
+
+    function burn(uint256 value) public {
+        require(balances[msg.sender] >= value, "Insufficient balance to burn");
+        _totalSupply -= value;
+        balances[msg.sender] -= value;
+        emit Transfer(msg.sender, address(0), value);
+    }
+}
+
+  `;
+}
